@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>注册</title>
+    <link rel="stylesheet" href="css/common.css/iconfont.css">
+    <link rel="stylesheet" href="css/register.css">
+</head>
+<body>
+    <!-- logo -->
+    <div id="logo">
+        <div class="logo-cont">
+            <div class="logo-left">
+                <a href="login.html"> <img src="images/logo_03.jpg" alt=""></a>
+            </div>
+            <div class="logo-right">
+                <P>已有账号？</P>
+                <P>请登录</P>
+            </div>
+        </div>
+    </div>
+    <!-- 验证手机号 -->
+    <div class="box oneBox" >
+        <!-- 进度条 -->
+        <div class="progressBar">
+            <div class="top">
+                <div class="left">
+                    <span></span>
+                    <i>1</i>
+                </div>
+                <div class="content">
+                    <span></span>
+                    <i>2</i>
+                </div>
+                <div class="right">
+                     <i>3</i>
+                    <span></span>
+                </div>
+            </div>
+            <div class="bottom">
+                <p class="bot-left">验证手机号</p>
+                <p class="bot-content">填写账号信息</p>
+                <p class="bot-right">注册成功</p>
+            </div>
+        </div>
+        <!-- 验证码 -->
+        <div class="identifyingCode">
+            <input id="verifyCodeInput" type="text" placeholder="请输入图形验证码">
+            <p></p>
+            <i class="iconfont iconyanzhengma txt"></i>
+            <div class="identCodeRight">
+                <div class="identRightBox" id="v_container"></div>
+                <p class="identCodeRightTxt">换一张</p>
+            </div>
+            <p class="identifyingCodeBottom"><i class="iconfont icondanger"></i>请输入图形验证码</p>
+        </div>
+        <!-- 手机号 -->
+        <div class="phone">
+            <input id="checkPhone" type="text" placeholder="请输入手机号码">
+            <p></p>
+            <i class="iconfont iconshouji1 iconPhone"></i>
+            <p><i class="iconfont icondanger"></i>验证完成后，可以用此手机号进行登录和找回密码。</p>
+        </div>
+        <!-- 手机验证码 -->
+        <div class="phoneIdentifyingCode">
+            <div class="inpBox">
+                <input id="phoneVerifyCode" type="text" placeholder="请输入手机验证码">
+                <p></p>
+                <i class="iconfont iconyanzhengma iconTxt"></i>
+                <button class="verifyCodeBtn">发送验证码</button>
+            </div>
+            <p><i class="iconfont icondanger"></i>验证码已发送，请在120秒内输入正确的验证码。</p>
+        </div>
+        <!-- 按钮 -->
+        <button class="btn">下一步</button>
+    </div>
+    <!-- 填写账号信息 -->
+    <div class="box twoBox" style="display:none">
+            <!-- 进度条 -->
+            <div class="progressBar newProgressBar">
+                <div class="top">
+                    <div class="left">
+                        <span></span>
+                        <i>1</i>
+                    </div>
+                    <div class="content">
+                        <span></span>
+                        <i>2</i>
+                    </div>
+                    <div class="right">
+                        <i>3</i>
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <p class="bot-left">验证手机号</p>
+                    <p class="bot-content">填写账号信息</p>
+                    <p class="bot-right">注册成功</p>
+                </div>
+            </div>
+            <!-- 设置密码 -->
+            <div class="phone">
+                <input id="password" type="password" placeholder="请设置您的密码">
+                <i class="iconfont iconmima iconPhone"></i>
+                <p><i class="iconfont icondanger"></i>建议使用两种或两种以上的字符设置密码。</p>
+            </div>
+            <!-- 确认密码 -->
+            <div class="phone ">
+                    <input id="checkPassword" type="password" placeholder="请确认您的密码">
+                    <p></p>
+                    <i class="iconfont iconmima iconPhone"></i>
+                    <p><i class="iconfont icondanger"></i>请保持两次输入的密码一致。</p>
+            </div>
+            <!-- 按钮 -->
+            <div class="btn btn-box">下一步</div>
+        </div>
+    <!-- 注册完成 -->
+    <div class="box threeBox" style="display: none">
+    <!-- 进度条 -->
+        <div class="progressBar newProgressBar">
+            <div class="top">
+                <div class="left">
+                    <span></span>
+                    <i>1</i>
+                </div>
+                <div class="content">
+                    <span></span>
+                    <i>2</i>
+                </div>
+                <div class="right">
+                    <i>3</i>
+                    <span></span>
+                </div>
+            </div>
+            <div class="bottom">
+                    <p class="bot-left">验证手机号</p>
+                    <p class="bot-content">填写账号信息</p>
+                    <p class="bot-right">注册成功</p>
+            </div>
+        </div>
+        <div class="successBox">
+                <!-- iconfont 的symbol引入 -->
+            <svg class="icon" aria-hidden="true">
+                <use xlink:href="#iconqueren1"></use>
+            </svg>
+            <p class="success">注册成功！</p>
+            <p class="login">请登录</p>
+        </div>
+    </div>
+
+    <div class="page-bottom">
+        <!-- <li><a href="">关于我们</a></li>
+        <li><a href="">联系我们</a></li>
+        <li><a href="">自助服务</a></li>
+        <li><a href="">友情链接</a></li>
+        <li><a href="">关注我们</a></li>
+        <li><a href="">购买流程</a></li>
+        <li><a href="">安装调试</a></li>
+        <li><a href="">税票制度</a></li> -->
+    </div>
+
+    <script src="js/iconfont.js"></script>
+    <script src="js/gVerify.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+    <script src="js/register.js"></script>
+    <script>
+        register.init();    
+    </script>
+
+</body>
+</html>

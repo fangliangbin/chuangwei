@@ -1,0 +1,141 @@
+@charset 'utf-8';
+html,body,ul,li,ol,dl,dd,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input{margin: 0;padding: 0;}
+ul,ol,li{list-style: none;}
+a,u{text-decoration: none;}
+b,strong{font-weight: normal;}
+em,i{font-style: normal;}
+h1,h2,h3,h4,h5,h6{font-size: 16px;font-weight: normal;}
+input{outline: none;}
+img{display: block;border: 0;}
+body{font-family: "微软雅黑"}
+.clear-fix:after{content: ".";clear: both;display: block;height: 0;overflow: hidden;visibility: hidden;}
+.clear-fix{zoom:1;}
+
+        /* logo */
+        // #logo{
+        //     height: 120px;
+        //     /* box-shadow: 0 5px 10px 0#ccc; */
+        // }
+        .logo-cont{
+            width: 1331px;
+            height: 120px;
+            margin: 0 auto;
+            .logo-left{
+                width: 295px;
+                height: 30px;
+                padding: 38px 0 0 60px;
+                float: left;
+            }
+            .logo-right{
+                float: right;
+                padding: 38px 35px 0 0; 
+                p{
+                    float: left;
+                }
+                p:last-child{
+                    color: #ef716e;
+                    cursor: pointer;
+                }
+            }
+        }
+        .box{
+            width: 1200px;
+            height: 605px;
+            margin:0 auto;
+            border: 1px solid #ccc;
+            box-shadow:0 0 10px #ccc;
+            .box-left{
+                width: 760px;
+                height: 605px;
+                background:url(../images/login_bg_03.jpg) no-repeat;
+                float: left;
+            }
+            .box-right{
+                width: 406px;
+                height: 605px;
+                float: left;
+                padding-left: 34px;
+                h2{
+                    font-size: 24px;
+                    padding-top:64px;
+                    margin-bottom: 30px;
+                }
+                .inp{
+                    display: block;
+                    width: 360px;
+                    height: 51px;
+                    margin-top: 15px;
+                    padding-left: 5px;
+                }
+                .inpBox{
+                    position: relative;
+                    .inputBox{
+                        display: block;
+                        width: 360px;
+                        height: 51px;
+                        margin-top: 15px;
+                        padding-left: 5px;
+                    }
+                    .identCodeRight{
+                        position: absolute;
+                        top: 5px;
+                        right: 40px;
+                        cursor: pointer;
+                        .identRightBox{
+                            width: 70px;
+                            height: 45px;
+                            background: red;
+                            float: left;
+                        }
+                        p{
+                            float: left;
+                            margin-left: 5px;
+                            padding-top: 10px;
+                
+                        }
+                    }
+                }
+                .btn{
+                    display: block;
+                    width: 370px;
+                    height: 50px;
+                    background: #2e8ae4;
+                    color: #fff;
+                    line-height: 50px;
+                    text-align: center;
+                    font-size: 14px;
+                    margin-top:50px;
+                    cursor: pointer;
+                }
+                .box-right-bottom{
+                    width: 366px;
+                    height: 12px;
+                    font-size: 12px;
+                    margin-top: 10px;
+                    line-height: 12px;
+                    .checkBox{
+                        float: left; 
+                    }
+                    .box-r-b-right{
+                        float: right;
+                        p{
+                            float: left;
+                            cursor: pointer;
+                            a{
+                                color: #000;
+                            }
+                        }
+                        i{
+                            float: left;
+                        }
+                    }
+                }
+            }
+        }
+        /* bottom */
+        .page-bottom{
+            width: 630px;
+            height: 50px;
+            background: url(../images/bottom_bg_03.jpg) no-repeat;
+            margin: 60px auto;
+        }

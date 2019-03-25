@@ -1,0 +1,91 @@
+html,
+body,
+ul,
+li,
+ol,
+dl,
+dd,
+dt,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+legend,
+img,
+input {
+  margin: 0;
+  padding: 0;
+}
+html,
+body {
+  font-size: 12px;
+}
+fieldset,
+img,
+input,
+button {
+  outline-style: none;
+}
+ul,
+li,
+ol {
+  list-style: none;
+}
+
+select,
+input {
+  vertical-align: middle;
+}
+
+textarea {
+  resize: none;
+}
+img {
+  border: 0;
+  /* vertical-align: middle; */
+}
+
+a {
+  text-decoration: none;
+  /* font-size: 0.12rem; */
+  color: #666666;
+}
+
+a:hover{
+  color: #000000;
+}
+.clearfix::after {
+  content: "";
+  clear: both;
+  overflow: hidden;
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b,
+strong {
+  font-weight: normal;
+  font-size: 1em;
+}
+s,
+i,
+em {
+  font-style: normal;
+  text-decoration: none;
+}
+
+.container {
+  margin: 0 auto;
+  width: 1210px;
+}
