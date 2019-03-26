@@ -10,6 +10,9 @@ img{display: block;border: 0;}
 body{font-family: "微软雅黑"}
 .clear-fix:after{content: ".";clear: both;display: block;height: 0;overflow: hidden;visibility: hidden;}
 .clear-fix{zoom:1;}
+
+$color:#2e8ae4;
+
 #logo{
     height: 120px;
     box-shadow: 0 5px 10px 0#ccc;
@@ -45,11 +48,12 @@ body{font-family: "微软雅黑"}
             top: 8px;
             width: 100px;
             height: 40px;
-            background: green;
+            background: rgb(78, 241, 78);
             font-size: 14px;
             color: #fff;
             line-height: 40px;
             text-align: center;
+            border-radius: 5px;
         }
         .bg-danger{
             position: absolute;
@@ -62,6 +66,7 @@ body{font-family: "微软雅黑"}
             color: #fff;
             line-height: 40px;
             text-align: center;
+            border-radius: 5px;
         }
         /* 外面的大盒子 */
         .box {
@@ -88,7 +93,7 @@ body{font-family: "微软雅黑"}
                             height: 6px;
                             float: left;
                             margin-top: 17px;
-                            background: #2e8ae4;
+                            background: $color;
                         }
                         i{
                             width: 38px;
@@ -99,7 +104,7 @@ body{font-family: "微软雅黑"}
                             color: #fff;
                             line-height: 38px;
                             font-size: 20px;
-                            background: #2e8ae4;
+                            background: $color;
                         }
                     }
                     .content{
@@ -162,7 +167,7 @@ body{font-family: "微软雅黑"}
                         width: 75px;
                         height: 14px;
                         font-size: 14px;
-                        color: #2e8ae4;
+                        color: $color;
                         line-height: 14px;
                         margin-top:15px;
                         padding-left: 44px;
@@ -229,7 +234,7 @@ body{font-family: "微软雅黑"}
                         width: 100px;
                         height: 40px;
                         float: left;
-                        /* border: 1px solid #2e8ae4; */
+                        /* border: 1px solid $color; */
                     }
                 }
                 .identifyingCodeBottom{
@@ -303,7 +308,7 @@ body{font-family: "微软雅黑"}
             .btn{
                 width: 496px;
                 height: 58px;
-                background:#2e8ae4;
+                background:$color;
                 color: #fff;
                 font-size: 14px;
                 border-radius: 5px;
@@ -319,10 +324,10 @@ body{font-family: "微软雅黑"}
                 .top{
                     .content{
                         span{
-                            background: #2e8ae4;
+                            background: $color;
                         }
                         i{
-                            background: #2e8ae4;
+                            background: $color;
                             color: #fff;
                         }
                     }
@@ -330,7 +335,7 @@ body{font-family: "微软雅黑"}
                 }
                 .bottom {
                     .bot-content{
-                        color: #2e8ae4;
+                        color: $color;
                     }
                 }
             }
@@ -342,29 +347,29 @@ body{font-family: "微软雅黑"}
                 .top {
                     .content{
                         span{
-                            background: #2e8ae4;
+                            background: $color;
                         }
                         i{
-                            background: #2e8ae4;
+                            background: $color;
                             color: #fff;
                         }
                     }
                     .right {
                         span{
-                            background: #2e8ae4;
+                            background: $color;
                         }
                         i{
-                            background: #2e8ae4;
+                            background: $color;
                             color: #fff;
                         }
                     }
                 }
                 .bottom {
                     .bot-content{
-                        color: #2e8ae4!important;
+                        color: $color!important;
                     }        
                     .bot-right{
-                        color: #2e8ae4;
+                        color: $color;
                     }
                 }
             }

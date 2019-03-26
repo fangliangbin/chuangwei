@@ -36,6 +36,8 @@ var register = (function(){
                 if(reg.test(text)){
                     $p.innerHTML = '手机号正确';
                     $p.className = 'bg-success';
+                    $('.verifyCodeBtn').removeAttr('disabled');
+
                 }else{
                     $p.innerHTML = '手机号有误';
                     $p.className = 'bg-danger';
@@ -46,11 +48,11 @@ var register = (function(){
             //点击按钮倒计时
             $('.verifyCodeBtn').on('click',function(){
                 if(num >= 0 && num <= 120){
-                    $('.verifyCodeBtn').attr('disabled','true');
+                $('.verifyCodeBtn').attr('disabled','true');
                 }
                 timer = setInterval(x => {
                     this.innerHTML = num;
-                    num--;
+                     num--;
                     if (num < 0) {
                         clearInterval(timer);
                         this.innerHTML = '获取';
@@ -138,10 +140,11 @@ var register = (function(){
                 })
                 .then(data => {
                   console.log('成功了');
-                  location.href = 'http://localhost:7777/1814/chuangwei/dist/login.html';
+                  location.href = 'login.html';
                 })
                 .then(data => {},data => {
                     console.log('失败了');
+                    alert(data.msg)
                 })
             })
         },

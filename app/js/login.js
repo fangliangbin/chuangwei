@@ -48,10 +48,11 @@ var login = (function(){
                 })
                 .then(data => {
                     console.log('成功了');
-                    location.href = 'http://localhost:7777/1814/chuangwei/dist/index.html';
+                    location.href = 'index.html';
                 })
                 .then(data =>{},data =>{
                     console.log('失败了');
+                    alert(data.msg);
                 })
             })
         },

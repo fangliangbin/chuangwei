@@ -47,11 +47,12 @@ body{font-family: "微软雅黑"}
                     top: 8px;
                     width: 100px;
                     height: 40px;
-                    background: green;
+                    background: rgb(39, 247, 39);
                     font-size: 14px;
                     color: #fff;
                     line-height: 40px;
                     text-align: center;
+                    border-radius: 5px;
             }
             .bg-danger{
                     position: absolute;
@@ -64,6 +65,7 @@ body{font-family: "微软雅黑"}
                     color: #fff;
                     line-height: 40px;
                     text-align: center;
+                    border-radius: 5px;
             }
         // 大盒子
         .box{
@@ -110,7 +112,7 @@ body{font-family: "微软雅黑"}
                         right: 40px;
                         cursor: pointer;
                         .identRightBox{
-                            width: 120px;
+                            width: 100px;
                             height: 45px;
                             float: left;
                         }

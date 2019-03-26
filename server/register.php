@@ -1,4 +1,5 @@
 <?php
+// header("Access-Control-Allow-Origin: *");
 include('./connet_db.php');
 $data = file_get_contents('php://input');
 $data = json_decode($data);
