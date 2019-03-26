@@ -24,6 +24,8 @@ var register = (function(){
                 }else{
                     $p.innerHTML = '验证码错误';
                     $p.className = 'bg-danger';
+                    $('#verifyCodeInput').select();
+                    return false;
                 }
             })
             //验证手机号
@@ -37,6 +39,8 @@ var register = (function(){
                 }else{
                     $p.innerHTML = '手机号有误';
                     $p.className = 'bg-danger';
+                    $('#checkPhone').select();
+                    return false;
                 }
             })
             //点击按钮倒计时
@@ -55,7 +59,7 @@ var register = (function(){
                     }
                 }, 1000);
             })
-            //验证验证码
+            //验证手机验证码
             $('#phoneVerifyCode').on('blur',function(){
                 let text = this.value;
                 const $p = this.nextElementSibling;
@@ -69,22 +73,35 @@ var register = (function(){
             })
             //点击切换第二个注册页面
             $('.btn').on('click',function(){
-               
-                // console.log(!$('#checkPhone').val() || $('#checkPhone + p').hasClass('bg-danger'))
-                if(!$('#verifyCodeInput').val() || $('#verifyCodeInput + p').hasClass('bg-danger')){
-                    $('.btn').attr('disabled','disabled');
-                    $('#verifyCodeInput').focus();
-                }if(!$('#checkPhone').val() || $('#checkPhone + p').hasClass('bg-danger')){
-                    // debugger
-                    $('.btn').attr('disabled','disabled');
-                    $('#checkPhone').focus();
-                }if(!$('#phoneVerifyCode').val() || $('#phoneVerifyCode + p').hasClass('bg-danger')){
-                    $('.btn').attr('disabled','disabled');
-                    $('#phoneVerifyCode').focus();
+                if(!$('#verifyCodeInput').val()){
+                    alert('验证码不能为空')
+                    $('#verifyCodeInput').select();
+                    return false;
+                }if(!$('#checkPhone').val()){
+                    alert('手机号不能为空')
+                    $('#checkPhone').select();
+                    return false;
+                }if(!$('#phoneVerifyCode').val()){
+                    alert('手机验证码不能为空')
+                    $('#phoneVerifyCode').select();
+                    return false;
+                }
+                $('.oneBox').css({'display':'none'});
+                $('.twoBox').css({'display':'block'});
+            })
+            //验证密码格式
+            $('#password').on('blur',function(){
+                let text = this.value;
+                const $p = this.nextElementSibling;
+                const reg = /^[a-z0-9_-]{6,18}$/;
+                if(reg.test(text)){
+                    $p.innerHTML = '密码格式正确';
+                    $p.className = 'bg-success';
                 }else{
-                    $('.btn').removeAttr('disabled');
-                    $('.oneBox').css({'display':'none'});
-                    $('.twoBox').css({'display':'block'});
+                    $p.innerHTML = '密码格式有误';
+                    $p.className = 'bg-danger';
+                    $('#password').select();
+                    return false;
                 }
             })
             //验证两次输入密码一致
@@ -92,7 +109,7 @@ var register = (function(){
                 let text = this.value;
                 const $p = this.nextElementSibling;
                 if(text == $('#password').val()){
-                    $p.innerHTML = '密码正确';
+                    $p.innerHTML = '密码一致';
                     $p.className = 'bg-success';
                 }else{
                     $p.innerHTML = '两次密码不一致';
@@ -109,6 +126,23 @@ var register = (function(){
                     $('.twoBox').css({'display':'none'});
                     $('.threeBox').css({'display':'block'});
                 }
+            })
+            $('.login').on('click',function(){
+                var obj = {
+                    phone:$('#checkPhone').val(),
+                    password:$('#password').val()
+                }
+                sendAjax('../server/register.php',{
+                    method:'POST',
+                    data:obj
+                })
+                .then(data => {
+                  console.log('成功了');
+                  location.href = 'http://localhost:7777/1814/chuangwei/dist/login.html';
+                })
+                .then(data => {},data => {
+                    console.log('失败了');
+                })
             })
         },
         //获取验证码

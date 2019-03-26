@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,14 +9,13 @@
 </head>
 <body>
         <!-- logo -->
-
             <div class="logo-cont">
                 <div class="logo-left">
-                    <a href="register.html"> <img src="images/logo_03.jpg" alt=""></a>
+                    <a href="index.html"> <img src="images/logo_03.jpg" alt=""></a>
                 </div>
                 <div class="logo-right">
                     <P>没有账号？</P>
-                    <P>请注册</P>
+                    <P><a href="register.html">请注册</a></P>
                 </div>
             </div>
         <!-- 内容 -->
@@ -26,13 +25,14 @@
             <!-- 登录框 -->
             <div class="box-right">
                 <h2>会员登录</h2>
-                <input class="inp" type="text" placeholder="邮箱/手机号/用户名">
-                <input class="inp" type="text" placeholder="请输入登录密码">
+                <input class="inp inp1" type="text" placeholder="邮箱/手机号/用户名">
+                <input class="inp inp2" type="password" placeholder="请输入登录密码">
                 <div class="inpBox">
                     <input class="inp inputBox" type="text" placeholder="请输入验证码">
+                    <p></p>
                     <div class="identCodeRight">
-                        <div class="identRightBox"></div>
-                        <p>换一张</p>
+                        <div class="identRightBox" id="v_container"></div>
+                        <p class="identCodeRightTxt">换一张</p>
                     </div>
                 </div>
                 <div class="btn">登录</div>
@@ -41,7 +41,7 @@
                     <div class="box-r-b-right">
                         <p><a href="">忘记密码？</a></p> 
                         <i>/</i>
-                        <p><a href="">注册</a></p>
+                        <p><a href="register.html">注册</a></p>
                     </div>
                 </div>
             </div>
@@ -58,5 +58,12 @@
                 <li><a href="">安装调试</a></li>
                 <li><a href="">税票制度</a></li> -->
         </div>
+        <script src="js/gVerify.js"></script>
+        <script src="js/ajax3.0.0.js"></script>
+        <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.min.js"></script>
+        <script src="js/login.js"></script>
+        <script>
+            login.init();
+        </script>
 </body>
 </html>

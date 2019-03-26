@@ -33,11 +33,39 @@ body{font-family: "微软雅黑"}
                     float: left;
                 }
                 p:last-child{
-                    color: #ef716e;
                     cursor: pointer;
+                    a{
+                        color: #ef716e;
+                    }
                 }
             }
         }
+            /* 验证成功和失败的提示样式 */
+            .bg-success{
+                    position: absolute;
+                    left: 90px;
+                    top: 8px;
+                    width: 100px;
+                    height: 40px;
+                    background: green;
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 40px;
+                    text-align: center;
+            }
+            .bg-danger{
+                    position: absolute;
+                    left: 90px;
+                    top: 8px;
+                    width: 100px;
+                    height: 40px;
+                    background: red;
+                    font-size: 14px;
+                    color: #fff;
+                    line-height: 40px;
+                    text-align: center;
+            }
+        // 大盒子
         .box{
             width: 1200px;
             height: 605px;
@@ -82,9 +110,8 @@ body{font-family: "微软雅黑"}
                         right: 40px;
                         cursor: pointer;
                         .identRightBox{
-                            width: 70px;
+                            width: 120px;
                             height: 45px;
-                            background: red;
                             float: left;
                         }
                         p{

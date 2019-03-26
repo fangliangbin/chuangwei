@@ -32,8 +32,10 @@ body{font-family: "微软雅黑"}
         float: left;
     }
     p:last-child{
-        color: #ef716e;
         cursor: pointer;
+        a{
+            color: #ef716e;
+        }
     }
 }
         /* 验证成功和失败的提示样式 */
@@ -336,60 +338,64 @@ body{font-family: "微软雅黑"}
              /* 注册成功 */
         .threeBox{
             height: 410px;
-                .newProgressBar{
-                    .top {
-                        .content{
-                            span{
-                                background: #2e8ae4;
-                            }
-                            i{
-                                background: #2e8ae4;
-                                color: #fff;
-                            }
+            .newProgressBar{
+                .top {
+                    .content{
+                        span{
+                            background: #2e8ae4;
                         }
-                        .right {
-                            span{
-                                background: #2e8ae4;
-                            }
-                            i{
-                                background: #2e8ae4;
-                                color: #fff;
-                            }
+                        i{
+                            background: #2e8ae4;
+                            color: #fff;
                         }
                     }
-                    .bottom {
-                        .bot-right{
-                            color: #2e8ae4;
-                        }        
+                    .right {
+                        span{
+                            background: #2e8ae4;
+                        }
+                        i{
+                            background: #2e8ae4;
+                            color: #fff;
+                        }
                     }
                 }
-                .successBox{
-                    text-align: center;
-                    /* iconfont symbol引入的通用css写法 */
-                    .icon {
-                        width: 8em;
-                        height: 8em;
-                        vertical-align: -0.15em;
-                        fill: currentColor;
-                        overflow: hidden;
-                    }
-                    .success{
-                        font-size: 14px;
-                        margin-top: 10px;
-                    }
-                    .login{
-                        font-size: 14px;
-                        color: #ef716e;
-                        cursor: pointer;
+                .bottom {
+                    .bot-content{
+                        color: #2e8ae4!important;
+                    }        
+                    .bot-right{
+                        color: #2e8ae4;
                     }
                 }
             }
-            /* bottom */
-            .page-bottom{
-                width: 630px;
-                height: 50px;
-                background: url(../images/bottom_bg_03.jpg) no-repeat;
-                margin: 60px auto;
+            .successBox{
+                text-align: center;
+                /* iconfont symbol引入的通用css写法 */
+                .icon {
+                    width: 8em;
+                    height: 8em;
+                    vertical-align: -0.15em;
+                    fill: currentColor;
+                    overflow: hidden;
+                }
+                .success{
+                    font-size: 14px;
+                    margin-top: 10px;
+                }
+                .login{
+                    font-size: 14px;
+                    cursor: pointer;
+                    color: #ef716e;
+                    
+                }
             }
+        }
+        /* bottom */
+        .page-bottom{
+            width: 630px;
+            height: 50px;
+            background: url(../images/bottom_bg_03.jpg) no-repeat;
+            margin: 60px auto;
+        }
 
         
