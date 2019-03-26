@@ -1,0 +1,334 @@
+
+.nav-1{
+    display: block;
+}
+
+/* 导航栏 */
+.nav{
+    width: 100%;
+    height: 37px;
+    background: #fff;
+}
+
+.menu-first a:hover{
+    color: #ffffff;
+}
+/* 商品分类 */
+.menu-top{
+    width: 194px;
+    height: 37px;
+    background: #2e8ae4;
+}
+.menu-top a{
+    width: 194px;
+    height: 37px;
+    padding-left: 15px;
+    font-size: 14px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+}
+.menu-top a i{
+    padding-right: 5px;
+    position: relative;
+    top: 2px;
+}
+
+/* 分类下面的菜单 */
+.menu-first{
+    
+    float: left;
+}
+.nav-1{
+    z-index: 1; 
+    width: 194px;
+    height: 510px;
+    background: linear-gradient(#3084e5, #18ebe2);
+    opacity: .9;
+    position: absolute;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+.nav-1>li{
+    width: 194px;
+    height: 36px;
+}
+
+.nav-1>li>a{
+    color: #ffffff;
+    font-size: 12px;
+    padding-left: 10px;
+    height: 36px;
+    line-height: 36px;
+}
+.nav-1>li>a i{
+    position: absolute;
+    right: 10px;
+    transition: all 0.5s;
+}
+
+.nav-1>li:hover{
+    background: #1d6ba9;
+}
+.nav-1>li:hover a i{
+    transform: rotate(90deg);
+    transition: all 0.5s;
+}
+
+.nav-1 li .nav-2{
+    height: 510px;
+    background: #fff;
+    opacity: .9;
+    position: absolute;
+    top: 0;
+    left: 194px;
+    box-sizing: border-box;
+    min-width: 100px;
+    padding-top: 10px;
+    display: none;
+}
+.nav-1 li:hover .nav-2{
+    display: block;
+}
+.nav-1 li .nav-2 li{
+    height: 36px;
+    text-align: center;
+    line-height: 36px;
+}
+.nav-1 li .nav-2 li a{
+    height: 36px;
+    min-width:100px;
+    display: block;
+}
+
+.nav-1 li .nav-2 li a:hover{
+    background: #3e91e1;
+}
+
+/* 商品分类后面的导航 */
+.nav-ul{
+    float: left;
+    padding-left: 10px; 
+}
+.nav-ul li{
+    float: left;
+    width: 76px;
+    height: 37px;
+    text-align: center;
+}
+.nav-ul li a{
+    width: 76px;
+    height: 36px;
+    line-height: 36px;
+    display: block;
+}
+.nav-ul li a:hover{
+    background: #2e8ae4;
+    color: #ffffff;
+}
+
+
+/* 轮播 */
+
+
+
+
+/* 商品内容区域 */
+#main{
+    min-width: 1220px;
+    /* max-width: 1220px; */
+    width: 100%;
+    background: #f4f4f4;
+    
+}
+
+
+/* 轮播图下的商品图片 */
+
+.main-margin-one{
+    padding-top: 50px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 热销推荐 */
+.title-font{
+    padding-top: 40px;
+    height: 40px;
+    line-height: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.title-font p{
+    font-size: 26px;
+}
+.ull{
+    height: 333px;
+    margin-top: 10px;
+}
+
+.ull .lii{
+    width: 232px;
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    float: left;
+    margin-left: 10px;
+}
+
+.ull .lii>a{
+    width: 232px;
+    height: 320px;
+    background: #ffffff;
+    display: block;
+}
+
+.ull .lii>a>img{
+    width: 232px;
+    height: 192px;
+    position: relative;
+    top: 20px;
+}
+.hot{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+.hot img{
+    width: 60px;
+    height: 62px;
+}
+
+.list-bottom h5{
+    font-size: 16px;
+    position: absolute;
+    bottom: 70px;
+    padding-left: 20px;
+}
+.list-bottom>p{
+    position: absolute;
+    padding-left: 20px;
+    bottom: 50px;
+    color: #999999;
+}
+.price{
+    font-size: 16px;
+    color: #2e8ae4;
+    position: absolute;
+    bottom: 20px;
+    padding-left: 20px;
+}
+.list-hover{
+    width: 100%;
+    height: 68px;
+    background: linear-gradient(to right,#18ebe2, #3084e5);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 15px;
+    box-sizing: border-box;
+    transition: all .8s;
+}
+.list-hover p{
+    font-size: 16px;
+    color: #ffffff;
+}
+.list-hover span{
+    width: 110px;
+    height: 30px;
+    border-radius: 15px;
+    background: linear-gradient(to right,#fc2aa9, #065ffd);
+    
+}
+.list-hover span a{
+    width: 110px;
+    height: 30px;
+    color: #ffffff;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ull .lii:hover .list-hover{
+    transform:  translateY(-68px);
+    transition: all .8s;
+}
+.ull>li:hover .list-bottom h5 a{
+    color: #2e8ae4;
+}
+
+/* 长方形的大图商品样式 */
+.lii2{
+    width: 478px;
+    height: 320px;
+    background: #ffffff;
+    /* padding-bottom: 50px; */
+    overflow: hidden;
+    position: relative;
+    float: left;
+    /* margin-right: 10px; */
+
+}
+.lii2 .price{
+    float: right;
+}
+.lii2>a img{
+    width: 478px;
+    height: 252px;
+}
+.lii2>a{
+    
+    background: #ffffff;
+    display: block;
+}
+.lii2 .list-hover{
+    position: absolute;
+    bottom: -68px;
+}
+
+.ull .lii2:hover .list-hover{
+    transform:  translateY(-68px);
+    transition: all .8s;
+}
+
+.ull .lii2 .list-hover{
+    padding: 0 135px;
+}
+.lii2 .list-bottom-2 h5{
+    position: absolute;
+    padding-left: 20px;
+    font-size: 16px;
+    bottom: 40px;
+    
+}
+.list-bottom-2 .price2{
+    font-size: 16px;
+    color: #2e8ae4;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    bottom: 32px;
+}
+
+.list-bottom-2>p{
+    position: absolute;
+    padding-left: 20px;
+    bottom: 15px;
+    color: #999999;
+}
+#main ul .lii{
+    box-sizing: border-box;
+    transition: all .8s;
+}
+#main ul .lii:hover{
+    transition: all .5s;
+    box-shadow: 0 0 10px #e3e3e3, 0 0 10px #e3e3e3, 0 0 10px #e3e3e3, 0 0 0 #e3e3e3;
+}
+// .list-bottom-2 
+//11111
+
+
+
+
