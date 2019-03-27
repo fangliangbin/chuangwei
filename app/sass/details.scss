@@ -1,0 +1,312 @@
+@import 'css/common.css/common.css','css/common.css/reset.css','css/common.css/iconfont.css';
+
+html,body,ul,li,ol,dl,dd,span,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,figure,figcaption{margin:0;padding: 0}
+a,u{text-decoration: none;}
+em,i{font-style: normal;}
+b,strong{font-weight: normal;}
+h1,h2,h3,h4,h5,h6{font-weight: normal;font-size:16px}
+ul,ol,li{list-style: none;}
+input{outline: none;}
+img{display: block;border-left: 0}
+body{font-family: "微软雅黑"}
+.clear_fix:after{content: ".";clear: both;display: block;height: 0;overflow: hidden;visibility: hidden;}
+.clear_fix{zoom:1;}
+
+
+$bgcolor:#f4f4f4 ;
+$boxWidth:1210px;
+$fontsize:14px;
+
+#body{
+    background: $bgcolor ;
+    .bodyBox{
+        width: $boxWidth;
+        margin: 0 auto;
+        .boxTop{
+            height: 35px;
+            width: $boxWidth;
+            background: $bgcolor;
+            line-height: 35px;
+            font-size: $fontsize;
+            p{
+                font-size: 12px;
+                color: #999;
+                a{
+                    font-size: 12px;
+                    color: #666;
+                }
+                span{
+                    color: #999;
+                }
+            }
+        }
+        .boxMain{
+            width: $boxWidth;
+            height: 692px;
+            margin-bottom: 15px;
+            background: #fff;
+            .mainLeft{
+                float: left;
+                margin: 58px 0 0 30px;
+                height: 581px;
+                width: 503px;
+                .imgBox{
+                    width: 500px;
+                    height: 500px;
+                    position: relative;
+                    border: 1px solid #000;
+                    img{
+                        display: block;
+                        width: 500px;
+                        height: 500px;
+                    }
+                    .filter{
+                        position: absolute;
+                        z-index: 5;
+                        width: 250px;
+                        height: 250px;
+                        left: 0px;
+                        top: 0px;
+                        display: none;
+                        background:gray;
+                        opacity: 0.3;
+                    }
+                    .showBigImage{
+                        position: absolute;
+                        overflow: hidden;
+                        top: 0px;
+                        width: 500px;
+                        height: 500px;
+                        left: 510px;
+                        z-index: 5;
+                        display: none;
+                        img{
+                            position: absolute;
+                            width: 1000px;
+                            height: 1000px;
+                            left: 0px;
+                            top: 0px;                     
+                        }
+                    }
+                }
+                .imgFoot{
+                    height: 60px;
+                    margin-top: 18px;
+                    .leftBtn{
+                        float: left;
+                        cursor:pointer;
+                        text-align: center;
+                        line-height: 60px;
+                        width: 25px;
+                        height: 60px;
+                        background: #f1f1f1;
+                    }
+                    .showImg{
+                        height: 60px;
+                        ul{
+                            .fristLi{
+                                margin-left: 33px;
+                                
+                            }
+                            .mark{
+                                border-color: red;
+                            }
+                            li{
+                                float: left;
+                                margin-left: 6px;
+                                border: 1px solid gray;
+                                height: 60px;
+                                width: 60px;
+                                img{
+                                    height: 100%;
+                                    width: 100%;
+                                }
+                            }
+                            
+                        }
+                        
+                    }
+                    .rightBtn{
+                        @extend .leftBtn ;
+                        float: right;
+                    }
+                }
+            }
+            .mainRight{
+                width: 600px;
+                height: 600px;
+                margin: 58px 0 0 56px;
+                float: left;
+                .list_con{
+                    width: 590px;
+                    li{
+                        height: 46px;
+                        width: 590px;
+                        font-size: 12px;
+                        p{
+                            color: #666;
+                            display: inline-block;
+                            margin-right: 38px;
+                            line-height: 12px;
+                        }
+                    }
+                    .list_text{
+                        height: 100px;
+                        line-height: 0;
+                        h3{
+                            font-size: 22px;
+                            font-weight: bold;
+                            line-height: 22px;
+                        }
+                        em{
+                            display: block;
+                            font-size: 12px;
+                            line-height: 20px;
+                            margin-top: 8px;
+                            color: #b0b7cc;
+                        }
+                        b{
+                            font-size: 12px;
+                            line-height: 18px;
+                            color: #ff0000;
+                        }
+                    }
+                    .list_price{
+                        span{
+                            font-size: 16px;
+                            color: red;
+                        }
+                    }
+                    .list_num{
+                        .amount_box{
+                            display: inline-block;
+                            width: 77px;
+                            height: 25px;
+                            position: relative;
+                            a{
+                                float: left;
+                                height: 23px;
+                                width: 17px;
+                                border: 1px solid #e5e5e5;
+                                background: #f0f0f0;
+                                text-align: center;
+                                line-height: 23px;
+                                color: #444;
+                                position: absolute;
+                                top: 0;
+                            }
+                            .reduce{
+                                 left: 0 ;
+                            }
+                            .plus{
+                                right: 0 ; 
+                            }
+                            input{
+                                width: 39px;
+                                height: 15px;
+                                line-height: 15px;
+                                border: 1px solid #aaa;
+                                color: #343434;
+                                text-align: center;
+                                padding: 4px 0;
+                                background-color: #fff;
+                                z-index: 2;
+                                position: absolute;
+                                left: 18px;
+                                float: left;
+                            }
+                        } 
+                    }
+                }
+                .options{
+                    margin-top: 22px;
+                    height: 40px;
+                    .left_btn{
+                        background: #2e8ae4 ;
+                        height: 40px;
+                        width: 110px;
+                        float: left;
+                        margin-right: 20px;
+                        line-height: 40px;
+                        text-align: center;
+                        em{
+                            color: #fff;
+                            font-size: 12px;
+                        }
+                    }
+                    .right_btn{
+                        @extend .left_btn ;
+                        background: #e83632;
+                        
+                    }
+                }
+            }
+        }
+        .mainFoot{
+            background: #fff;
+            width: $boxWidth;
+            .footLeft{
+                float: left;
+                width: 200px;
+                margin:23px 0 0 30px;
+                p{
+                    display: block;
+                    margin-bottom: 22px;
+                    font-size: 12px;
+                    line-height: 12px;
+                }
+                .img_box{
+                    width: 200px;
+                    height: 239px;
+                    margin-bottom: 15px;
+                    border: 1px solid #eeeeee;
+                }
+            }
+            .footRight{
+                float: left;
+                margin: 18px 0 0 20px;
+                width: 930px;
+                .rightTop{
+                    margin-bottom: 11px;
+                    ul{
+                        li{
+                            float: left;
+                            height: 24px;
+                            width: 56px;
+                            margin-right: 44px;
+                            font-size: 12px;
+                            text-align: center;
+                            line-height: 24px;
+                                a{
+                                    color: #000 ;
+                                }
+                        }
+                        .top_move{
+                            border-bottom: 2px solid #2e8ae4;
+                            a{
+                                color: #2e8ae4
+                            }
+                        }
+                    }
+                }
+                .rightMain{
+                    width:930px;
+                    border: 1px solid #eee ;
+                    .mainImg{
+                        float: left;
+                        width: 750px;
+                        height: 1452px;
+                        margin-left: 90px;
+                        img{
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+                    .firstImg{
+                        margin-top: 11px;
+                    }
+                }
+            }
+        }
+    }
+}
