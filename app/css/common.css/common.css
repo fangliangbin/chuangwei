@@ -408,7 +408,7 @@
   .foot_linner_left ul li {
     display: flex;
     flex-direction: column;
-    /* padding-right: 205px; */
+    padding-right: 205px;
     box-sizing: border-box;
     color: #666666; }
     .foot_linner_left ul li p {
