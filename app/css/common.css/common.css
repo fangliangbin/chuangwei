@@ -227,6 +227,7 @@
       top: 35px;
       right: 0;
       display: none;
+      z-index: 999;
     }
     .shop-car-hover>p{
       padding:0 10px;
