@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/common/restet.css">
+    <link rel="stylesheet" href="css/common/iconfont.css">
+    <link rel="stylesheet" href="css/common/common.css">
     <link rel="stylesheet" href="css/details.css">
-    <link rel="stylesheet" href="css/common.css/restet.css">
-    <link rel="stylesheet" href="css/common.css/iconfont.css">
-    <link rel="stylesheet" href="css/common.css/common.css">
 </head>
 
 <body>
@@ -37,7 +37,7 @@
                     </div>
                     <!-- 底部小图 -->
                     <div class="imgFoot">
-                        <div class="leftBtn"><</div>
+                        <div class="leftBtn"></div>
                         <div class="rightBtn">></div>
                         <div class="showImg">
                             <ul class="img-box">
@@ -166,16 +166,20 @@
     <div id="footer">
 
     </div>
-    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
     <script src="js/details.js"></script>
     <script>
-        $('#header').load('./common.html #header ') ;
+        $('#header').load('common.html #header ') ;
         $('#search').load('./common.html #search ',function(){
-            $.getScript('js/jsonp.js') ;
-            $.getScript('js/search.js') ;
-        }) ;
-        $('.nav').load('./common.html  .nav') ;
-        $('#footer').load('./common.html #foot');
+            $.getScript('js/jsonp.js');
+            $.getScript('js/search.js');
+            $.getScript('js/commontop.js')
+        });
+        $('.nav').load('common.html  .nav');
+        $('#footer').load('common.html #foot');
+    </script>
+    <script>
+         search.init();
     </script>
 </body>
 

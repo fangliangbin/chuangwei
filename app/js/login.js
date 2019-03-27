@@ -50,6 +50,7 @@ var login = (function(){
                 })
                 .then(data => {
                     localStorage.name = $('.inp1').val();
+                    document.cookie = `user=${$('.inp1').val()}`;
                     location.href = 'index.html';
                 })
                 .catch(data =>{

@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>创维首页</title>
-    <link rel="stylesheet" href="css/common.css/common.css">
+    <link rel="stylesheet" href="css/common/common.css">
     <link rel="stylesheet" href="css/index.css">
-    <link rel="stylesheet" href="css/common.css/restet.css">
-    <link rel="stylesheet" href="css/common.css/iconfont.css">
+    <link rel="stylesheet" href="css/common/restet.css">
+    <link rel="stylesheet" href="css/common/iconfont.css">
     <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/Swiper/4.4.0/css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
 </head>
@@ -32,12 +32,21 @@
         </div>
     </div>
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
-    <!-- 判断本地存储中是否含有name,有的话就把登录注册变成name -->
+    <!-- 判断cookie中是否有user，有就渲染到页面 -->
     <script>
-        if(localStorage.name){
+            // 获取cookie
+            var str = document.cookie;
+            var arr = str.split('; ');
+            var obj = {};
+            arr.forEach(x => {
+            var _arr = x.split('=');
+            obj[_arr[0]] = _arr[1];
+            })
+            // console.log(obj);
+        if(document.cookie){
             $('.top-login').css({'display':'none'});
             $('.top-register').css({'display':'none'});
-            $('.username').text(localStorage.name);
+            $('.username').text(obj.user);
             $('.out').css({'display':'block'});
         }
         $('.username').on('click',function(){
@@ -48,6 +57,7 @@
             $('.top-register').css({'display':'block'});
             $('.username').css({'display':'none'});
             $('.out').css({'display':'none'});
+            
         })
     </script>
     <div id="search">
@@ -116,7 +126,7 @@
             $('.sou').select();
             return false;
         }
-        // location.href = 'login.html'
+        location.href = 'search.html'
     })
     //跳转购物车
     // $('.shopCar').on('click',function(){
@@ -141,7 +151,7 @@
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">OLED</a></li>
+                                    <li><a href="">OLED</a></li>
                                     <li><a href="#">全面屏</a></li>
                                     <li><a href="#">防蓝光</a></li>
                                     <li><a href="#">AL智能</a></li>
@@ -311,11 +321,11 @@
             <div class="main-2">
                 <div class="title-font">
                     <p>热销推荐</p>
-                    <a href="#">查看更多<i class="iconfont iconzuojiantou1"></i></a>
+                    <a href="">查看更多<i class="iconfont iconzuojiantou1"></i></a>
                 </div>
                 <ul class="ull">
                     <li class="lii">
-                        <a href="#"><img src="images/watch1.jpg"></a>
+                        <a href="details.html"><img src="images/watch1.jpg"></a>
                         <div class="list-bottom">
                             <h5><a href="#">55H20(送百度智能音箱)</a></h5>
                             <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
@@ -328,7 +338,7 @@
                         </div>
                     </li>
                     <li class="lii">
-                        <a href="#"><img src="images/watch2.jpg"></a>
+                        <a href="details.html"><img src="images/watch2.jpg"></a>
                         <div class="list-bottom">
                             <h5><a href="#">55H20(送百度智能音箱)</a></h5>
                             <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
@@ -341,9 +351,9 @@
                         </div>
                     </li>
                     <li class="lii">
-                        <a href="#"><img src="images/watch3.jpg"></a>
+                        <a href="details.html"><img src="images/watch3.jpg"></a>
                         <div class="list-bottom">
-                            <h5><a href="#">55H20(送百度智能音箱)</a></h5>
+                            <h5><a href="details.html">55H20(送百度智能音箱)</a></h5>
                             <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
                             <div class="price">￥4199.00</div>
                             <div class="hot"><img src="images/imageTag5.png"></div>
@@ -354,9 +364,9 @@
                         </div>
                     </li>
                     <li class="lii">
-                        <a href="#"><img src="images/watch4.jpg"></a>
+                        <a href="details.html"><img src="images/watch4.jpg"></a>
                         <div class="list-bottom">
-                            <h5><a href="#">55H20(送百度智能音箱)</a></h5>
+                            <h5><a href="details.html">55H20(送百度智能音箱)</a></h5>
                             <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
                             <div class="price">￥4199.00</div>
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
@@ -369,7 +379,7 @@
                     <li class="lii">
                         <a href="#"><img src="images/watch5.jpg"></a>
                         <div class="list-bottom">
-                            <h5><a href="#">55H20(送百度智能音箱)</a></h5>
+                            <h5><a href="details.html">55H20(送百度智能音箱)</a></h5>
                             <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
                             <div class="price">￥4199.00</div>
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->

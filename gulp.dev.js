@@ -26,11 +26,7 @@ gulp.task('server', function() {
   connect.server({
     root: 'dist', //设置根目录
     livereload: true, // 是否热更新
-<<<<<<< HEAD
     port: 7979
-=======
-    port: 7171
->>>>>>> cb9122b526935c3ffb71675cc724dc8be55d9973
   });
 })
 

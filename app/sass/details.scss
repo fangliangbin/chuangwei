@@ -1,4 +1,4 @@
-@import 'css/common.css/common.css','css/common.css/reset.css','css/common.css/iconfont.css';
+// @import 'css/common.css/common.css','css/common.css/reset.css','css/common.css/iconfont.css';
 
 html,body,ul,li,ol,dl,dd,span,dt,p,h1,h2,h3,h4,h5,h6,form,fieldset,legend,img,input,figure,figcaption{margin:0;padding: 0}
 a,u{text-decoration: none;}
@@ -20,7 +20,7 @@ $fontsize:14px;
 #body{
     background: $bgcolor ;
     .bodyBox{
-        position: relative;
+        // position: relative;
         width: $boxWidth;
         margin: 0 auto;
         .boxTop{
@@ -31,7 +31,7 @@ $fontsize:14px;
             font-size: $fontsize;
             .topText{
                 position: absolute;
-                left: 0; 
+                left: 200px; 
                 display: block;
                 float: left;
                 width: 200px;

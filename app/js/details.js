@@ -28,12 +28,19 @@ $(function () {
         self.find('.showBigImage').find('img').css('left', -2 * X + 'px');
         self.find('.showBigImage').find('img').css('top', -2 * Y + 'px');
     })
+
+
+
     // 鼠标离开
     $('.imgBox').on('mouseleave', function (e) {
         const self = $(this);
         self.find('.filter').css('display', 'none');
         self.find('.showBigImage').css('display', 'none');
     })
+
+
+
+
     // 鼠标滑过切换图片
     $('.img-box').on('mouseenter','li',function () {
         $(this).parent().find('li').css('border-color','black');
@@ -78,4 +85,5 @@ $(function () {
         }
         $(this).val($count) ;
     })
+
 })
