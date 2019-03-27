@@ -7,6 +7,7 @@ var login = (function(){
         },
         event(){
             const self = this;
+            //点击切换验证码
             $('.identCodeRightTxt').on('click',function(){
                 self.getIdentifyingCode();
             })
@@ -25,6 +26,7 @@ var login = (function(){
                     return false;
                 }
             })
+            //点击登录按钮跳转到首页
             $('.btn').on('click',function(){
                 if(!$('.inp1').val()){
                     alert('账号不能为空')
@@ -47,15 +49,14 @@ var login = (function(){
                     data:obj
                 })
                 .then(data => {
-                    console.log('成功了');
                     location.href = 'index.html';
                 })
                 .then(data =>{},data =>{
-                    console.log('失败了');
                     alert(data.msg);
                 })
             })
         },
+        //获取验证码
         getIdentifyingCode(){
             verifyCode = new GVerify('v_container');
         },

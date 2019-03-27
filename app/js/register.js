@@ -129,6 +129,7 @@ var register = (function(){
                     $('.threeBox').css({'display':'block'});
                 }
             })
+            //点击按钮切换到登录页
             $('.login').on('click',function(){
                 var obj = {
                     phone:$('#checkPhone').val(),
@@ -139,11 +140,9 @@ var register = (function(){
                     data:obj
                 })
                 .then(data => {
-                  console.log('成功了');
                   location.href = 'login.html';
                 })
                 .then(data => {},data => {
-                    console.log('失败了');
                     alert(data.msg)
                 })
             })
