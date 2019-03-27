@@ -135,15 +135,15 @@ var register = (function(){
                     phone:$('#checkPhone').val(),
                     password:$('#password').val()
                 }
-                sendAjax('../server/register.php',{
+                sendAjax('http://localhost:7777/server/register.php',{
                     method:'POST',
                     data:obj
                 })
                 .then(data => {
-                  location.href = 'login.html';
+                    location.href = 'login.html';
                 })
-                .then(data => {},data => {
-                    alert(data.msg)
+                .catch(data => {
+                    alert(data.msg);
                 })
             })
         },

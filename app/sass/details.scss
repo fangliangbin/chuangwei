@@ -20,6 +20,7 @@ $fontsize:14px;
 #body{
     background: $bgcolor ;
     .bodyBox{
+        position: relative;
         width: $boxWidth;
         margin: 0 auto;
         .boxTop{
@@ -28,7 +29,13 @@ $fontsize:14px;
             background: $bgcolor;
             line-height: 35px;
             font-size: $fontsize;
-            p{
+            .topText{
+                position: absolute;
+                left: 0; 
+                display: block;
+                float: left;
+                width: 200px;
+                height: 35px;
                 font-size: 12px;
                 color: #999;
                 a{

@@ -19,9 +19,11 @@
             <div class="header_wrapper container">
                 <span>欢迎您，来到创维官方商城</span>
                 <div class="header_right">
-                    <a href="login.html">登陆</a>
-                    <a href="register.html">注册</a>
-                    <a href="#">我的订单</a>
+                    <a class="top-login" href="login.html">登陆</a>
+                    <a class="top-register" href="register.html">注册</a>
+                    <span class="username"></span>
+                    <span class="out">退出</span>
+                    <a href="CWshopcar.html">我的订单</a>
                     <a href="#" class="saoma">
                         手机端<img src="images/little.png">
                     <p>请使用微信扫描</p></a>
@@ -29,7 +31,25 @@
             </div>
         </div>
     </div>
-    
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <!-- 判断本地存储中是否含有name,有的话就把登录注册变成name -->
+    <script>
+        if(localStorage.name){
+            $('.top-login').css({'display':'none'});
+            $('.top-register').css({'display':'none'});
+            $('.username').text(localStorage.name);
+            $('.out').css({'display':'block'});
+        }
+        $('.username').on('click',function(){
+            location.href = 'user.html'
+        })
+        $('.out').on('click',function(){
+            $('.top-login').css({'display':'block'});
+            $('.top-register').css({'display':'block'});
+            $('.username').css({'display':'none'});
+            $('.out').css({'display':'none'});
+        })
+    </script>
     <div id="search">
         <div class="search_wrapper container">
             <div class="logo">
@@ -77,7 +97,6 @@
         
     </div>
 <!-- 鼠标滚动轴，头部显示在页面上方 -->
-<script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
 <script src="js/jsonp.js"></script>
 <script src="js/search.js"></script>
 <script>

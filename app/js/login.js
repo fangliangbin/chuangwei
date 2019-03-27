@@ -44,14 +44,15 @@ var login = (function(){
                     phone:$('.inp1').val(),
                     password:$('.inp2').val()
                 }
-                sendAjax('../server/login.php',{
+                sendAjax('http://localhost:7777/server/login.php',{
                     method:'POST',
                     data:obj
                 })
                 .then(data => {
+                    localStorage.name = $('.inp1').val();
                     location.href = 'index.html';
                 })
-                .then(data =>{},data =>{
+                .catch(data =>{
                     alert(data.msg);
                 })
             })
