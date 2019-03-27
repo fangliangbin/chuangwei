@@ -11,10 +11,6 @@ body{font-family: "微软雅黑"}
 .clear_fix:after{content: ".";clear: both;display: block;height: 0;overflow: hidden;visibility: hidden;}
 .clear_fix{zoom:1;}
 
-html,body{
-    height: 100%;
-    width: 100%;
-}
 
 
 .whole_check {
@@ -29,12 +25,12 @@ html,body{
     cursor: pointer;
 }
 
-
-/* header */
-#header{
-    height: 185px;
-    background: #fff ;
+.space{
+    height: 10px;
+    background: #f4f4f4 ;
 }
+/* header */
+
 
 /* body */
 
@@ -43,8 +39,9 @@ html,body{
 }
 .bodyBox{
     width: 1287px;
+    margin-top: 20px;
     background:#fff;
-    margin: 16px auto ;
+    margin: 0 auto ;
         .boxTop{
         height: 55px;
         width: 1287px;
@@ -256,26 +253,6 @@ html,body{
         
     }
 }  
-
-
-
-
-
-
-
-/* serves */
-
-#serves{
-    height: 287px ;
-    background: #f4f4f4 ;
-}
-
-/* footer */
-
-#footer{
-    height: 66px ;
-    background: #eee ;
-}
 
 /* 确定框 */
 
