@@ -15,11 +15,19 @@
     color: #999999; }
 
 .header_right {
-  float: right; }
+  float: right; 
+}
+.header_right span{
+  cursor: pointer;
+}
+.header_right .out{
+  margin-left: 5px;
+  display: none;
+}
   .header_right a {
     color: #999999;
     height: 41px;
-    margin-left: 5px; 
+    margin-left: 7px; 
     display: block;
   float: left;}
   .qf-banner{
@@ -408,7 +416,7 @@
   .foot_linner_left ul li {
     display: flex;
     flex-direction: column;
-    /* padding-right: 205px; */
+    padding-right: 205px;
     box-sizing: border-box;
     color: #666666; }
     .foot_linner_left ul li p {
