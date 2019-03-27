@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* 头部区域 */
+
 .head {
   height: 41px;
   width: 100%;
@@ -17,21 +18,61 @@
   float: right; }
   .header_right a {
     color: #999999;
-    margin-left: 5px; }
+    height: 41px;
+    margin-left: 5px; 
+    display: block;
+  float: left;}
+  .qf-banner{
+    min-width: 1220px;
+  }
+    .saoma{
+      position: relative;
+      width: 36px;
+      height: 41px;
+    }
+    .saoma img{
+      display: none;
+      position: absolute;
+      right: 5px;
+      top: 41px;
+      z-index: 20;
+      width: 135px;
+      height: 120px;
+      padding: 10px 20px;
+      box-sizing: border-box;
+      background:#ffffff;
+    }
+    .saoma p{
+      width: 135px;
+      height: 36px;
+      background:#f5f5f5;
+      color: #0069c8;
+      position: absolute;
+      right: 5px;
+      top: 161px;
+      z-index: 20;
+      text-align: center;
+      display: none;
+    }
+    .saoma:hover p{
+      display: block;
+    }
+    .saoma:hover img{
+      display: block;
+    }
     .header_right a:last-child {
       color: #0069c8; }
 
 /* 搜索栏区域 */
 #search{
   position: relative;
-  z-index: 1000;
+  min-width: 1220px;
+  z-index: 12;
   width: 100%;
   background: #ffffff;
 }
 .search_wrapper {
-  /* z-index: 200; */
   height: 90px;
-  box-sizing: border-box;
   background: #ffffff; 
   box-sizing: border-box;
 }
@@ -136,10 +177,11 @@
 .search_right {
   float: right;
   position: relative;
+  height: 36px;
   top: -35px; }
   .search_right:hover {
     background: #f7f7f7; }
-  .search_right a {
+  .search_right>a {
     width: 166px;
     height: 36px;
     border: 1px solid #0069c8;
@@ -148,14 +190,14 @@
     justify-content: center;
     border-radius: 4px;
     text-align: center; }
-    .search_right a p {
+    .search_right>a p {
       position: relative;
       top: -2px; }
-    .search_right a i {
+    .search_right>a i {
       font-size: 22px;
       position: relative;
       top: 2px; }
-  .search_right span {
+  .search_right>span {
     width: 18px;
     height: 18px;
     border-radius: 50%;
@@ -168,6 +210,61 @@
     right: -8px;
     top: -8px; }
 
+/* 购物车划过出现的方块 */
+    .search_right:hover .shop-car-hover{
+      display: block;
+    }
+
+    .shop-car-hover{
+      border: solid #e3e3e3 1px;
+      border-radius: 10px;
+      width: 305px;
+      height: 76px;
+      background: #f5f5f5;
+      position: absolute;
+      right: 0;
+      display: none;
+    }
+    .shop-car-hover>p{
+      padding:0 10px;
+      height: 38px;
+      background: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      line-height: 38px;
+      font-size: 14px;
+    }
+    .shop-car-hover .shop-car-bottom{
+      display: flex;
+      flex-direction: row;
+      height: 38px;
+      line-height: 38px;
+    }
+    .shop-car-bottom a:hover{
+      color: #ffffff;
+    }
+    .shop-car-bottom span{
+      display: flex;
+      flex-direction: row;
+      font-size: 12px;
+      font-weight: 900;
+      padding-left: 10px;
+    }
+    .shop-car-bottom>a{
+      width: 62px;
+      height: 25px;
+      border-radius: 5px;
+      background: #e83632;
+      color: #ffff;
+      text-align: center;
+      line-height: 25px;
+      position: absolute;
+      right: 10px;margin-top: 5px;
+    }
+
+
+
+    /* 导航 */
 .nav {
   width: 100%;
   height: 37px;
@@ -276,6 +373,7 @@
 /* 尾部区域 */
 #foot {
   position: absolute;
+  min-width: 1220px;
   height: 265px;
   width: 100%;
   background: #f6f6f6;
@@ -306,7 +404,8 @@
   .foot_linner_left ul li {
     display: flex;
     flex-direction: column;
-    padding-right: 205px;
+    /* padding-right: 205px; */
+    box-sizing: border-box;
     color: #666666; }
     .foot_linner_left ul li p {
       padding-bottom: 20px;
@@ -330,4 +429,3 @@
     justify-content: space-between; }
 
 
-    
