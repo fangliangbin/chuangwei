@@ -109,6 +109,7 @@
   background: #fbfbfb;
   width: 460px;
   cursor: pointer;
+  z-index: 99999;
 }
 .top-search .search_input .tips li{
   padding-left: 20px;
@@ -181,7 +182,7 @@
   top: -35px; }
   .search_right:hover {
     background: #f7f7f7; }
-  .search_right>a {
+  .search_right{
     width: 166px;
     height: 36px;
     border: 1px solid #0069c8;
@@ -190,10 +191,10 @@
     justify-content: center;
     border-radius: 4px;
     text-align: center; }
-    .search_right>a p {
+    .search_right p{
       position: relative;
       top: -2px; }
-    .search_right>a i {
+    .search_right i {
       font-size: 22px;
       position: relative;
       top: 2px; }
@@ -207,8 +208,9 @@
     justify-content: center;
     align-items: center;
     color: #ffff;
+    top: -8px; 
     right: -8px;
-    top: -8px; }
+  }
 
 /* 购物车划过出现的方块 */
     .search_right:hover .shop-car-hover{
@@ -222,6 +224,7 @@
       height: 76px;
       background: #f5f5f5;
       position: absolute;
+      top: 35px;
       right: 0;
       display: none;
     }
