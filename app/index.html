@@ -81,6 +81,7 @@
 <script src="js/jsonp.js"></script>
 <script src="js/search.js"></script>
 <script>
+    //页面下拉搜索框置顶
     var $search = $('#search');            
     var alloffset = $search.offset().top;
     $(window).scroll(function(){
@@ -241,19 +242,17 @@
     </div>   
 
 
-    
-
 
 
     <!-- 轮播图 -->
     
     <div class="swiper-container qf-banner">
         <div class="swiper-wrapper">
-            <div class="swiper-slide bg-image Gintama"></div>
-            <div class="swiper-slide bg-image SteinsGate"></div>
-            <div class="swiper-slide bg-image Unicorn"></div>
-            <div class="swiper-slide bg-image Berserk"></div>
-            <div class="swiper-slide bg-image SummerWars"></div>
+            <div class="swiper-slide bg-image Gintama"><a href="details.html" target="_blank"></a></div>
+            <div class="swiper-slide bg-image SteinsGate"><a href="details.html" target="_blank"></a></div>
+            <div class="swiper-slide bg-image Unicorn"><a href="details.html" target="_blank"></a></div>
+            <div class="swiper-slide bg-image Berserk"><a href="details.html" target="_blank"></a></div>
+            <div class="swiper-slide bg-image SummerWars"><a href="details.html" target="_blank"></a></div>
         </div>
         <div class="swiper-button-prev"><i class="iconfont iconzuojiantou"></i></div><!--左箭头-->
         <div class="swiper-button-next"><i class="iconfont iconzuojiantou1"></i></div><!--右箭头-->
@@ -284,9 +283,9 @@
         <div class="main-wrapper container">
             <!-- 轮播图下的图片 -->
             <div class="main-margin-one">
-                <a href="#"><img src="images/main-margin-one1.png"></a>
-                <a href="#"><img src="images/main-margin-one2.png"></a>
-                <a href="#"><img src="images/main-margin-one3.png"></a>
+                <a href="details.html" target="_blank"><img src="images/main-margin-one1.png"></a>
+                <a href="details.html" target="_blank"><img src="images/main-margin-one2.png"></a>
+                <a href="index.html"><img src="images/main-margin-one3.png"></a>
             </div>
             <!-- 热销推荐 -->
             <div class="main-2">
@@ -296,7 +295,7 @@
                 </div>
                 <ul class="ull">
                     <li class="lii">
-                        <a href="#"><img src="images/watch1.jpg"></a>
+                        <a href="details.html"><img src="images/watch1.jpg"></a>
                         <div class="list-bottom">
                             <h5><a href="#">55H20(送百度智能音箱)</a></h5>
                             <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
@@ -304,7 +303,7 @@
                             <div class="hot"><img src="images/imageTag3.png"></div>
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -317,7 +316,7 @@
                             <div class="hot"><img src="images/imageTag4.png"></div>
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -330,7 +329,7 @@
                             <div class="hot"><img src="images/imageTag5.png"></div>
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -343,7 +342,7 @@
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -356,7 +355,7 @@
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -372,22 +371,16 @@
                 <ul class="ull">
                     <li class="lii2">
                         <a href="#"><img src="images/TV1.jpg"></a>
-                        <div class="list-bottom-2">
-                            <!-- <div class="list-bottom-left"> -->
+                        <div class="list-bottom-2">               
                                 <h5><a href="#">65S9A(送延保)</a></h5>
                                 <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
-                            <!-- </div> -->
-
-                            <div class="price2">￥25999.00</div>
-                            <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
+                            <div class="price2">￥25999.00</div>     
                             <div class="list-hover">
                                 <p>￥25999.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
-
-
                     <li class="lii">
                         <a href="#"><img src="images/TV2.jpg"></a>
                         <div class="list-bottom">
@@ -397,7 +390,7 @@
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -410,7 +403,7 @@
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -423,7 +416,7 @@
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -449,7 +442,7 @@
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥25999.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -464,7 +457,7 @@
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -477,7 +470,7 @@
                             <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -487,10 +480,9 @@
                             <h5><a href="#">55H20(送百度智能音箱)</a></h5>
                             <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
                             <div class="price">￥4199.00</div>
-                            <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -507,16 +499,12 @@
                     <li class="lii2">
                         <a href="#"><img src="images/iceBox1.jpg"></a>
                         <div class="list-bottom-2">
-                            <!-- <div class="list-bottom-left"> -->
                                 <h5><a href="#">65S9A(送延保)</a></h5>
                                 <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
-                            <!-- </div> -->
-
                             <div class="price2">￥25999.00</div>
-                            <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥25999.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
@@ -528,10 +516,9 @@
                             <h5><a href="#">55H20(送百度智能音箱)</a></h5>
                             <p>2+32G | 极光幻彩淅变色 | 全面屏</p>
                             <div class="price">￥4199.00</div>
-                            <!-- <div class="hot"><img src="../images/imageTag5.png"></div> -->
                             <div class="list-hover">
                                 <p>￥4199.00</p>
-                                <span><a href="#">加入购物车</a></span>
+                                <span><a href="details.html"  target="_blank">加入购物车</a></span>
                             </div>
                         </div>
                     </li>
