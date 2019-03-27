@@ -7,12 +7,16 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/CWshopcar.css">
+    <link rel="stylesheet" href="css/common.css/restet.css">
+    <link rel="stylesheet" href="css/common.css/iconfont.css">
+    <link rel="stylesheet" href="css/common.css/common.css">
 </head>
 
 <body> 
-    <div id="header">
-        <div class="headerBox"></div>
-    </div>
+    <div id="header"></div>
+    <div id="search"></div>
+    <div class="nav"></div>
+    <div class="space"></div>
     <div id="body">
         <div class="bodyBox">
             <div class="boxTop">
@@ -122,6 +126,24 @@
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/CWshopcar.js"></script>
+    <script>
+         $('#header').load('./common.html #header ') ;
+         $('#search').load('./common.html #search ',function(){
+            $.getScript('js/jsonp.js') ;
+            $.getScript('js/search.js') ;
+        }) ;
+        $('.nav').load('./common.html  .nav') ;
+        $('#footer').load('./common.html #foot');
+        
+    </script>
+    <script>
+        $('.search-btn').on('click',function(){
+        if($('.sou').val() == ''){
+            alert('搜索条件不为空');
+            $('.sou').select();
+            return false;
+        }
+    </script>
 </body>
 
 </html>
