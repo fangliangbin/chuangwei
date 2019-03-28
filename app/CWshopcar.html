@@ -20,7 +20,7 @@
     <div id="body">
         <div class="bodyBox">
             <div class="boxTop">
-                <ul class="order_listss cartTop">
+                <ul class="order_lists cartTop clear_fix">
                     <li class="list_chk">
                         <input type="checkbox" id="all" class="whole_check shopChoies">
                         <label for="all"></label>
@@ -34,7 +34,7 @@
             </div>
             <div class="cartBox">
                 <div class="order_content">
-                    <ul class="order_lists">
+                    <!-- <ul class="order_lists">
                         <li class="list_chk">
                             <input type="checkbox" id="checkbox_3" class="son_check">
                             <label for="checkbox_3"></label>
@@ -64,7 +64,8 @@
                         <li class="list_op">
                             <p class="del"><a href="javascript:;" class="delbtn">移除商品</a></p>
                         </li>
-                    </ul>
+                    </ul> -->
+                    
                 </div>
             </div>
             <div class="bar-wrapper">
@@ -94,6 +95,7 @@
     </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="js/shopRend.js"></script>
     <script src="js/CWshopcar.js"></script>
     <script>
          $('#header').load('./common.html #header ') ;
@@ -103,17 +105,8 @@
         }) ;
         $('.nav').load('./common.html  .nav') ;
         $('#footer').load('./common.html #foot');
-        
     </script>
-    <script>
-        $('.search-btn').on('click',function(){
-        if($('.sou').val() == ''){
-            alert('搜索条件不为空');
-            $('.sou').select();
-            return false;
-        }
-    })
-    </script>
+
 </body>
 
 </html>
