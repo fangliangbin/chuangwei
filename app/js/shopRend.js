@@ -3,13 +3,13 @@ var shopRend = (function(){
     return{
         init(){
             $box = $('.order_content');
-            $shopDel = $('.my_model')
+            $shopDel = $('.opBtn');
             this.getCarData();
             this.event();
         },
         event(){
             var _this = this ;
-            $box.on('click','.dialog-sure',function() {
+            $shopDel.on('click','.dialog-sure',function() {
                 var self = $(this);
                 // 获取点击按钮的索引
                 var index = self.index('.dialog-sure');

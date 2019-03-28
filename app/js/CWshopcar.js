@@ -186,12 +186,10 @@ $(function() {
 			if ($(this).is(':checked')) {
 				var goods = parseInt($(this).parents('.order_lists').find('.sum_price').html().substring(1));
 				var num = parseInt($(this).parents('.order_lists').find('.sum').val());
-				console.log($(this).parents('.order_lists').find('.sum_price').html().substring(3));
 				total_money += goods;
 				total_count += num;
 			}
 		});
-		console.log(total_money);
 		$('.total_text').html('￥' + total_money + '.00');
 		
 		$('.piece_num').html(total_count);
