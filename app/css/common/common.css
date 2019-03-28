@@ -91,10 +91,10 @@
 /* logo */
 .logo {
   position: relative;
-  top: 8px;
+  top: 15px;
   display: block;
   width: 268px;
-  height: 90px;
+  /* height: 90px; */
   float: left;
   line-height: 90px; }
   .logo img {
@@ -284,7 +284,8 @@
   background: #fff; }
 
 .menu-first {
-  float: left; }
+  float: left;
+ }
   .menu-first a:hover {
     color: #ffffff; }
 
@@ -366,14 +367,21 @@
 /* 商品分类后面的导航 */
 .nav-ul {
   float: left;
+  height: 37px;
   padding-left: 10px;
-  position: relative;
-  top: 1px; }
+  /* position: relative; */
+  /* top: -13px;  */
+
+}
+.nav-menu{
+  height: 40px;
+}
   .nav-ul li {
     float: left;
     width: 76px;
-    height: 38px;
-    text-align: center; }
+    height: 37px;
+    text-align: center;
+   }
     .nav-ul li a {
       width: 76px;
       height: 38px;
@@ -442,3 +450,81 @@
     justify-content: space-between; }
 
 
+/* 详情页中的置顶 */
+#stick{
+  min-width: 1220px;
+  position: relative;
+  /* top: 0;  */
+  width: 100%;
+  height: 57px;
+  background: #ffffff;
+  overflow: hidden;
+  z-index: 9999;
+  box-shadow: 0 0 0 #e3e3e3, 0 0 0 #e3e3e3, 0 0 20px #e3e3e3, 0 0 0 #e3e3e3;
+}
+.stick_margin{
+  position: relative;
+  min-width: 1220px;
+}
+.stick_left{
+  position: absolute;
+  left: 20px;
+  line-height: 57px;
+  font-size: 14px;
+}
+
+.stick_right{
+  width: 960px;
+  float: right;
+}
+.stick_right .stick_nav{
+  height: 57px;
+  line-height: 57px;
+  float: left;
+}
+.stick_right .stick_nav li{
+  cursor: pointer;
+  float: left;
+  width: 56px;
+  margin-right: 40px;
+  font-size: 14px;
+  position: relative;
+  top: -1px;
+  display: flex;
+  flex-direction: column;
+}
+.stick_right>a{
+  position: relative;
+  top: 8px;
+  margin-right: 30px;
+  float: right;
+  font-size: 14px;
+  width: 115px;
+  height: 32px;
+  background: #e83632;
+  border-radius: 5px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* box-sizing: border-box; */
+}
+.stick_right>a:hover{
+  color: #ffffff;
+}
+
+.stick_right .stick_nav li span{
+  width: 56px;
+  height: 3px;
+  background: #0069c8;
+  position: absolute;
+  bottom: -7px;
+  transition: all .4s;
+}
+.stick_right .stick_nav li:hover span{
+  transform:  translateY(-14px);
+    transition: all .4s;
+}
+.stick_right .stick_nav li:hover{
+  color: #0069c8;
+}
