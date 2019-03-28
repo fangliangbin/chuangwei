@@ -365,18 +365,12 @@
     display: block; }
 
 /* 商品分类后面的导航 */
-.nav-ul {
-  float: left;
-  height: 37px;
-  padding-left: 10px;
-  /* position: relative; */
-  /* top: -13px;  */
 
-}
+ 
 .nav-menu{
   height: 40px;
 }
-  .nav-ul li {
+  .nav-ul li{
     float: left;
     width: 76px;
     height: 37px;
@@ -384,12 +378,12 @@
    }
     .nav-ul li a {
       width: 76px;
-      height: 38px;
-      line-height: 38px;
+      height: 37px;
+      line-height: 37px;
       display: block; }
       .nav-ul li a:hover {
         background: #2e8ae4;
-        color: #ffffff; }
+        color: #ffffff; } 
 
 /* 尾部区域 */
 #foot {
