@@ -5,8 +5,293 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="css/common/common.css">
+    <link rel="stylesheet" href="css/common/iconfont.css">
+    <link rel="stylesheet" href="css/common/restet.css">
+    <link rel="stylesheet" href="css/common.css/search.css">
 </head>
 <body>
-    <h1>搜索列表</h1>
+    <!-- 登录 头部 -->
+    <div id="header">
+        <div class="head">
+            <div class="header_wrapper container">
+                <span>欢迎您，来到创维官方商城</span>
+                <div class="header_right">
+                    <a class="top-login" href="login.html">登陆</a>
+                    <a class="top-register" href="register.html">注册</a>
+                    <span class="username"></span>
+                    <span class="out">退出</span>
+                    <a href="#">我的订单</a>
+                    <a href="#" class="saoma">
+                        手机端<img src="images/little.png">
+                    <p>请使用微信扫描</p></a>
+                </div>
+            </div>
+        </div>
+    </div> 
+        <div id="search">
+            <div class="search_wrapper container">
+                <div class="logo">
+                    <a href="index.html" title="创维商城"><img src="images/logo.png"/></a>
+                </div>
+                <!-- 搜索框 -->
+                <div class="search_box">
+                    <div class="top-search">
+                        <div class="search_input">
+                            <input type="text" placeholder="输入条件" class="sou">
+                            <ul class="tips"></ul>
+                        </div>
+                        <!-- 放大镜 -->
+                        <div class="fangdajing search-btn">
+                            <input type="button">
+                            <i class="iconfont iconsousuo"></i>
+                        </div>
+                    </div>
+                    <!-- 搜索框下的标签 -->
+                    <div class="search_label">
+                            <li><a href="#">OLED</a></li> 
+                            <li><a href="#">超薄</a></li> 
+                            <li><a href="#">4k超清</a></li>
+                            <li><a href="#">全面屏</a></li>
+                            <li><a href="#">防蓝光护眼</a></li>
+                            <li><a href="#">大屏</a></li>
+                            <li><a href="#">智能网络</a></li> 
+                    </div>
+                </div>
+                <!-- 右边的购物车 -->
+                <div class="search_right">
+                    <a href="#"><p><i class="iconfont iconicon_gouwuche"></i>我的购物车</p></a>
+                    <span>0</span>
+                    <div class="shop-car-hover">
+                        <p>购物车列表<span class="iconfont iconcha"></span></p>
+                        <div class="shop-car-bottom">
+                            <span>共<p>0</p>件商品</span>
+                            <span>总计￥<p>0</p></span>
+                            <a href="#">去购物车</a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+    <!-- 鼠标滚动轴，头部显示在页面上方 -->
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+    <script src="js/commontop.js"></script>
+    <script src="js/jsonp.js"></script>
+    <script src="js/search.js"></script>
+    <script>
+        var $search = $('#search');            
+        var alloffset = $search.offset().top;
+        $(window).scroll(function(){
+            if($(window).scrollTop()>=alloffset){
+                $('#search').css({'position':'fixed','top':0});
+            }else if($(window).scrollTop()<alloffset){
+                $('#search').css({'position':'static'});
+            }
+        })
+        $('.search-btn').on('click',function(){
+        if($('.sou').val() == ''){
+            alert('搜索条件不为空');
+            $('.sou').select();
+            return false;
+        }
+        location.href = 'search.html'
+    })
+        search.init();
+    </script>
+        <!-- 轮播图上的导航条 -->
+        <!-- 搜索栏 -->
+        <div class="nav">
+            <div class="nav-menu container">
+                <!-- 商品分类 -->
+                <div class="menu-first">
+                    <div class="menu-top">
+                        <a style="cursor:pointer" class="menu-a">
+                                <i class="iconfont iconiconfeileileft"></i>商品分类
+                            </a>
+                            <ul class="nav-1">
+                                <li>
+                                    <a href="#">电视
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">OLED</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                        <li><a href="#">防蓝光</a></li>
+                                        <li><a href="#">AL智能</a></li>
+                                        <li><a href="#">4K超屏</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">盒子/投影仪
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">企鹅极光</a></li>
+                                        <li><a href="#">T系</a></li>
+                                        <li><a href="#">n系</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">灯饰
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">L1系列</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">冰箱
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">OLED</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                        <li><a href="#">防蓝光</a></li>
+                                        <li><a href="#">AL智能</a></li>
+                                        <li><a href="#">4K超屏</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">电视
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">OLED</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                        <li><a href="#">防蓝光</a></li>
+                                        <li><a href="#">AL智能</a></li>
+                                        <li><a href="#">4K超屏</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">盒子/投影仪
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">企鹅极光</a></li>
+                                        <li><a href="#">T系</a></li>
+                                        <li><a href="#">n系</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">灯饰
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">L1系列</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">冰箱
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">OLED</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                        <li><a href="#">防蓝光</a></li>
+                                        <li><a href="#">AL智能</a></li>
+                                        <li><a href="#">4K超屏</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                        <li><a href="#">全面屏</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">盒子/投影仪
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">企鹅极光</a></li>
+                                        <li><a href="#">T系</a></li>
+                                        <li><a href="#">n系</a></li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <a href="#">灯饰
+                                        <i class="iconfont iconzuojiantou1"></i>
+                                    </a>
+                                    <ul class="nav-2">
+                                        <li><a href="#">L1系列</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- 商品分类后的导航 -->
+                    <ul class="nav-ul">
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">电视</a></li>
+                        <li><a href="#">洗衣机</a></li>
+                        <li><a href="#">空调</a></li>
+                        <li><a href="#">盒子/投影仪</a></li>
+                        <li><a href="#">净水器</a></li>
+                        <li><a href="#">智能锁</a></li>
+                        <li><a href="#">冰箱</a></li>
+                        <li><a href="#">音响</a></li>
+                        <li><a href="#">显示器</a></li>
+                        <li><a href="#">商务机</a></li>
+                        <!-- <li><a href="#">灯饰</a></li> -->
+                    </ul>
+                </div>
+        </div> 
+
+        
+        
+        <div id="image">
+            <div class="search-222 container">
+                <img src="images/search222.png">
+            </div>
+            <div class="images">
+                <img src="images/search111.png">
+                <img src="images/search111.png">
+            </div>
+        </div>
+
+
+    <!-- 尾部 -->
+    <div id="foot">
+        <div class="foot_wrapper">
+            <div class="foot-con container">
+                <div class="foot_top">
+                    <div class="foot_linner_left">
+                        <ul>
+                            <li>
+                                <p>支付方式</p>
+                                <a href="#">微信支付</a>
+                                <a href="#">支付宝</a>
+                            </li>
+                            <li>
+                                <p>售后服务</p>
+                                <a href="#">发票无忧</a>
+                                <a href="#">安装维修</a>
+                                <a href="#">验货提醒</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="foot_linner_right">
+                        <img src="images/kefudianhua.png"/>
+                        <a href="#"><img src="images/kefu.png"/></a>
+                    </div>
+                </div>
+            </div>
+            <div class="foot_bottom">
+                <div class="linner_foot container">
+                    <img src="images/foot-3.png"/>
+                    <img src="images/footerIco1.jpg"/>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
 </body>
 </html>
