@@ -24,7 +24,7 @@
                     <span class="username"></span>
                     <span class="out">退出</span>
                     <a href="CWshopcar.html">我的订单</a>
-                    <a href="#" class="saoma">
+                    <a href="javaScript:;" class="saoma">
                         手机端<img src="images/little.png">
                     <p>请使用微信扫描</p></a>
                 </div>
@@ -33,33 +33,33 @@
     </div>
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
     <!-- 判断cookie中是否有user，有就渲染到页面 -->
-    
-    <script>
-            // 获取cookie
-            var str = document.cookie;
-            var arr = str.split('; ');
-            var obj = {};
-            arr.forEach(x => {
-            var _arr = x.split('=');
-            obj[_arr[0]] = _arr[1];
-            })
-            // console.log(obj);
-        if(document.cookie){
-            $('.top-login').css({'display':'none'});
-            $('.top-register').css({'display':'none'});
-            $('.username').text(obj.user);
-            $('.out').css({'display':'block'});
-        }
-        $('.username').on('click',function(){
-            location.href = 'user.html'
-        })
-        $('.out').on('click',function(){
-            $('.top-login').css({'display':'block'});
-            $('.top-register').css({'display':'block'});
-            $('.username').css({'display':'none'});
-            $('.out').css({'display':'none'}); 
-        })
-    </script>
+    <script src="js/cookie.js"></script>
+    <!-- <script>
+        //     // 获取cookie
+        //     var str = document.cookie;
+        //     var arr = str.split('; ');
+        //     var obj = {};
+        //     arr.forEach(x => {
+        //     var _arr = x.split('=');
+        //     obj[_arr[0]] = _arr[1];
+        //     })
+        //     // console.log(obj);
+        // if(document.cookie){
+        //     $('.top-login').css({'display':'none'});
+        //     $('.top-register').css({'display':'none'});
+        //     $('.username').text(obj.user);
+        //     $('.out').css({'display':'block'});
+        // }
+        // $('.username').on('click',function(){
+        //     location.href = 'user.html'
+        // })
+        // $('.out').on('click',function(){
+        //     $('.top-login').css({'display':'block'});
+        //     $('.top-register').css({'display':'block'});
+        //     $('.username').css({'display':'none'});
+        //     $('.out').css({'display':'none'}); 
+        // })
+    </script> -->
     <div id="search">
         <div class="search_wrapper container">
             <div class="logo logo-box">
@@ -80,13 +80,13 @@
                 </div>
                 <!-- 搜索框下的标签 -->
                 <div class="search_label">
-                    <li><a href="#">OLED</a></li> 
-                    <li><a href="#">超薄</a></li> 
-                    <li><a href="#">4k超清</a></li>
-                    <li><a href="#">全面屏</a></li>
-                    <li><a href="#">防蓝光护眼</a></li>
-                    <li><a href="#">大屏</a></li>
-                    <li><a href="#">智能网络</a></li> 
+                    <li><a href="search.html">OLED</a></li> 
+                    <li><a href="search.html">超薄</a></li> 
+                    <li><a href="search.html">4k超清</a></li>
+                    <li><a href="search.html">全面屏</a></li>
+                    <li><a href="search.html">防蓝光护眼</a></li>
+                    <li><a href="search.html">大屏</a></li>
+                    <li><a href="search.html">智能网络</a></li> 
                 </div>
             </div>  
             <!-- 右边的购物车 -->
@@ -130,113 +130,113 @@
                         </a>
                         <ul class="nav-1">
                             <li>
-                                <a href="#">电视
+                                <a href="javaScript:;">电视
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="">OLED</a></li>
-                                    <li><a href="#">全面屏</a></li>
-                                    <li><a href="#">防蓝光</a></li>
-                                    <li><a href="#">AL智能</a></li>
-                                    <li><a href="#">4K超屏</a></li>
-                                    <li><a href="#">全面屏</a></li>
-                                    <li><a href="#">全面屏</a></li>
+                                    <li><a href="search.html">OLED</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
+                                    <li><a href="search.html">防蓝光</a></li>
+                                    <li><a href="search.html">AL智能</a></li>
+                                    <li><a href="search.html">4K超屏</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">盒子/投影仪
+                                <a href="javaScript:;">盒子/投影仪
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">企鹅极光</a></li>
-                                    <li><a href="#">T系</a></li>
-                                    <li><a href="#">n系</a></li>
+                                    <li><a href="search.html">企鹅极光</a></li>
+                                    <li><a href="search.html">T系</a></li>
+                                    <li><a href="search.html">n系</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">灯饰
+                                <a href="javaScript:;">灯饰
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">L1系列</a></li>
+                                    <li><a href="search.html">L1系列</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">冰箱
+                                <a href="javaScript:;">冰箱
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">OLED</a></li>
-                                    <li><a href="#">全面屏</a></li>
-                                    <li><a href="#">防蓝光</a></li>
-                                    <li><a href="#">AL智能</a></li>
-                                    <li><a href="#">4K超屏</a></li>
-                                    <li><a href="#">全面屏</a></li>
-                                    <li><a href="#">全面屏</a></li>
+                                    <li><a href="search.html">OLED</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
+                                    <li><a href="search.html">防蓝光</a></li>
+                                    <li><a href="search.html">AL智能</a></li>
+                                    <li><a href="search.html">4K超屏</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">电视
+                                <a href="javaScript:;">电视
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">OLED</a></li>
-                                    <li><a href="#">全面屏</a></li>
-                                    <li><a href="#">防蓝光</a></li>
-                                    <li><a href="#">AL智能</a></li>
-                                    <li><a href="#">4K超屏</a></li>
-                                    <li><a href="#">全面屏</a></li>
-                                    <li><a href="#">全面屏</a></li>
+                                    <li><a href="search.html">OLED</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
+                                    <li><a href="search.html">防蓝光</a></li>
+                                    <li><a href="search.html">AL智能</a></li>
+                                    <li><a href="search.html">4K超屏</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">盒子/投影仪
+                                <a href="javaScript:;">盒子/投影仪
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">企鹅极光</a></li>
-                                    <li><a href="#">T系</a></li>
-                                    <li><a href="#">n系</a></li>
+                                    <li><a href="search.html">企鹅极光</a></li>
+                                    <li><a href="search.html">T系</a></li>
+                                    <li><a href="search.html">n系</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">灯饰
+                                <a href="javaScript:;">灯饰
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">L1系列</a></li>
+                                    <li><a href="search.html">L1系列</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">冰箱
+                                <a href="javaScript:;">冰箱
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">OLED</a></li>
-                                    <li><a href="#">全面屏</a></li>
-                                    <li><a href="#">防蓝光</a></li>
-                                    <li><a href="#">AL智能</a></li>
-                                    <li><a href="#">4K超屏</a></li>
-                                    <li><a href="#">全面屏</a></li>
-                                    <li><a href="#">全面屏</a></li>
+                                    <li><a href="search.html">OLED</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
+                                    <li><a href="search.html">防蓝光</a></li>
+                                    <li><a href="search.html">AL智能</a></li>
+                                    <li><a href="search.html">4K超屏</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
+                                    <li><a href="search.html">全面屏</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">盒子/投影仪
+                                <a href="javaScript:;">盒子/投影仪
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">企鹅极光</a></li>
-                                    <li><a href="#">T系</a></li>
-                                    <li><a href="#">n系</a></li>
+                                    <li><a href="search.html">企鹅极光</a></li>
+                                    <li><a href="search.html">T系</a></li>
+                                    <li><a href="search.html">n系</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="#">灯饰
+                                <a href="javaScript:;">灯饰
                                     <i class="iconfont iconzuojiantou1"></i>
                                 </a>
                                 <ul class="nav-2">
-                                    <li><a href="#">L1系列</a></li>
+                                    <li><a href="search.html">L1系列</a></li>
                                 </ul>
                             </li>
                         </ul>
@@ -245,9 +245,9 @@
                 <!-- 商品分类后的导航 -->
                 <ul class="nav-ul">
                     <li><a href="index.html">首页</a></li>
-                    <li><a href="#">服务</a></li>
-                    <li><a href="#">创维集团</a></li>
-                    <li><a href="#">爱内购</a></li>
+                    <li><a href="http://www.95105555.com/">服务</a></li>
+                    <li><a href="http://www.skyworth.com/">创维集团</a></li>
+                    <li><a href="http://www.ineigo.com/">爱内购</a></li>
                 </ul>
             </div>
     </div>   
