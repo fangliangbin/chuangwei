@@ -54,7 +54,7 @@ var shopCar = (function(){
             var shopHtml = `<div class="mainLeft">
             <div class="imgBox">
                 <!-- 中图 -->
-                <img src="${data.img}" alt="">
+                <img class="contImg" src="${data.img}" alt="">
                 <span class="filter"></span>
                 <!-- 大图 -->
                 <div class="showBigImage">

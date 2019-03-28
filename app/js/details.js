@@ -71,19 +71,19 @@ $(function () {
         }
         $(this).prev('input').val($count);
     })
-    $('.sum').keyup(function(){
-        var $count = parseInt($(this).val());
-            if($(this).val() == ''){
-                $(this).val('1');
-            }
-        console.log($count);
-        if($count >= 100){
-            $count = 100 ;
-        }
-        if($count <= 1){
-            $count = 1 ;
-        }
-        $(this).val($count) ;
-    })
+    // $('.sum').keyup(function(){
+    //     var $count = parseInt($(this).val());
+    //         if($(this).val() == ''){
+    //             $(this).val('1');
+    //         }
+    //     console.log($count);
+    //     if($count >= 100){
+    //         $count = 100 ;
+    //     }
+    //     if($count <= 1){
+    //         $count = 1 ;
+    //     }
+    //     $(this).val($count) ;
+    // })
 
 })

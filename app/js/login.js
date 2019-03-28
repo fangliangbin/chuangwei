@@ -19,25 +19,25 @@ var login = (function(){
                 if(res){
                     $p.innerHTML = '验证成功';
                     $p.className = 'bg-success';
+                    $('.btn').removeAttr('disabled');
                 }else{
                     $p.innerHTML = '验证码错误';
                     $p.className = 'bg-danger';
-                    $('.inputBox').select();
-                    return false;
+                    $('.btn').attr('disabled','true');
                 }
             })
             //点击登录按钮跳转到首页
             $('.btn').on('click',function(){
                 if(!$('.inp1').val()){
-                    alert('账号不能为空')
+                    alert('账号不能为空');
                     $('.inp1').select();
                     return false;
                 }if(!$('.inp2').val()){
-                    alert('密码不能为空')
+                    alert('密码不能为空');
                     $('.inp2').select();
                     return false;
-                }if(!$('.inputBox').val() || $('inputBox + p').hasClass('bg-danger')){
-                    alert('验证码不能为空')
+                }if(!$('.inputBox').val()){
+                    alert('验证码不能为空');
                     return false;
                 }
                 var obj = {
