@@ -20,6 +20,5 @@
             $('.top-login').css({'display':'block'});
             $('.top-register').css({'display':'block'});
             $('.username').css({'display':'none'});
-            $('.out').css({'display':'none'});
-            
+            $('.out').css({'display':'none'}); 
         })

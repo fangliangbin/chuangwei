@@ -18,6 +18,7 @@
   float: right; 
 }
 .header_right span{
+  display: block;
   cursor: pointer;
 }
 .header_right .out{
