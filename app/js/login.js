@@ -36,7 +36,7 @@ var login = (function(){
                     alert('密码不能为空')
                     $('.inp2').select();
                     return false;
-                }if(!$('.inputBox').val()){
+                }if(!$('.inputBox').val() || $('inputBox + p').hasClass('bg-danger')){
                     alert('验证码不能为空')
                     return false;
                 }

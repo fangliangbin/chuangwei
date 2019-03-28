@@ -116,4 +116,15 @@ var search = (function(){
             });
         }
     }
-}())
+}());
+
+search.init();
+
+$('.search-btn').on('click',function(){
+    if($('.sou').val() == ''){
+        alert('搜索条件不为空');
+        $('.sou').select();
+        return false;
+    }
+    location.href = 'search.html';
+})

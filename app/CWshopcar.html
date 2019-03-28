@@ -97,48 +97,13 @@
     <script src="js/CWshopcar.js"></script>
     <script>
         $('#header').load('./common.html #header') ;
-        $('#search').load('./common.html #search') ;
+        $('#search').load('./common.html #search',function(){
+            $.getScript('js/cookie.js');
+            $.getScript('js/jsonp.js');
+            $.getScript('js/search.js');
+        });
         $('.nav').load('./common.html  .nav') ;
         $('#footer').load('./common.html #foot');
-    </script>
-    <script src="js/cookie.js"></script>
-    <script src="js/jsonp.js"></script>
-    <script src="js/search.js"></script>
-    <script>
-        $('.search-btn').on('click',function(){
-        if($('.sou').val() == ''){
-            alert('搜索条件不为空');
-            $('.sou').select();
-            return false;
-        }
-    })
-    search.init();
-    </script>
-    <script>
-                    // 获取cookie
-            var str = document.cookie;
-            var arr = str.split('; ');
-            var obj = {};
-            arr.forEach(x => {
-            var _arr = x.split('=');
-            obj[_arr[0]] = _arr[1];
-            })
-            // console.log(obj);
-        if(document.cookie){
-            $('.top-login').css({'display':'none'});
-            $('.top-register').css({'display':'none'});
-            $('.username').text(obj.user);
-            $('.out').css({'display':'block'});
-        }
-        $('.username').on('click',function(){
-            location.href = 'user.html'
-        })
-        $('.out').on('click',function(){
-            $('.top-login').css({'display':'block'});
-            $('.top-register').css({'display':'block'});
-            $('.username').css({'display':'none'});
-            $('.out').css({'display':'none'}); 
-        })
     </script>
 </body>
 
