@@ -73,7 +73,6 @@ $(function () {
     })
     $('.sum').keyup(function(){
         var $count = parseInt($(this).val());
-            // $(this).val($(this).val().replace(/\D|^0/g, ""));
             if($(this).val() == ''){
                 $(this).val('1');
             }
