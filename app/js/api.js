@@ -1,0 +1,35 @@
+let shop=[{
+    "id":1,
+    "img": 'images/watch1.jpg',
+    "title":'55H20(送百度智能音箱)',
+    "author":'2+32G | 极光幻彩淅变色 | 全面屏',
+    "price": '￥4199.00',
+},
+{   
+    "id":2,
+    "img": 'images/watch2.jpg',
+    "title":'55H6(送智能音箱、挂架)',
+    "author":'全面屏|超解像技术|防蓝光|2+32G',
+    "price": '￥3188.00',
+},
+{   
+    "id":3,
+    "img": 'images/watch3.jpg',
+    "title":'55H5(送挂架)',
+    "author":'4K超清 全面屏 光学防蓝光护眼',
+    "price": '￥2889.00',
+},
+{   
+    "id":4,
+    "img": 'images/watch3.jpg',
+    "title":'49H5',
+    "author":'4K HDR 全面屏 光学防蓝光护眼 人',
+    "price": '￥2688.00',
+},
+{   
+    "id":5,
+    "img": 'images/watch5.jpg',
+    "title":'55M9',
+    "author":'4K 人工智能新体验，芯片A73架构',
+    "price": '￥2199.00',
+}]
