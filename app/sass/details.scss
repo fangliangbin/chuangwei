@@ -17,6 +17,13 @@ $bgcolor:#f4f4f4 ;
 $boxWidth:1210px;
 $fontsize:14px;
 
+.nav-ul{
+    height: 37px;
+    text-align: center;
+    position: relative;
+    top: -13px;
+}
+
 #body{
     background: $bgcolor ;
     .bodyBox{
@@ -31,7 +38,7 @@ $fontsize:14px;
             font-size: $fontsize;
             .topText{
                 position: absolute;
-                left: 200px; 
+                left: 350px; 
                 display: block;
                 float: left;
                 width: 200px;

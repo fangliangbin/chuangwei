@@ -18,6 +18,7 @@
   float: right; 
 }
 .header_right span{
+  display: block;
   cursor: pointer;
 }
 .header_right .out{
@@ -90,10 +91,10 @@
 /* logo */
 .logo {
   position: relative;
-  top: 8px;
+  top: 15px;
   display: block;
   width: 268px;
-  height: 90px;
+  /* height: 90px; */
   float: left;
   line-height: 90px; }
   .logo img {
@@ -283,7 +284,8 @@
   background: #fff; }
 
 .menu-first {
-  float: left; }
+  float: left;
+ }
   .menu-first a:hover {
     color: #ffffff; }
 
@@ -365,14 +367,21 @@
 /* 商品分类后面的导航 */
 .nav-ul {
   float: left;
+  height: 37px;
   padding-left: 10px;
-  position: relative;
-  top: 1px; }
+  /* position: relative; */
+  /* top: -13px;  */
+
+}
+.nav-menu{
+  height: 40px;
+}
   .nav-ul li {
     float: left;
     width: 76px;
-    height: 38px;
-    text-align: center; }
+    height: 37px;
+    text-align: center;
+   }
     .nav-ul li a {
       width: 76px;
       height: 38px;

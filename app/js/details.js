@@ -69,7 +69,7 @@ $(function () {
         if($count >= 100){
             $count = 100;
         }
-        $(this).prev('input').val($count) ;
+        $(this).prev('input').val($count);
     })
     $('.sum').keyup(function(){
         var $count = parseInt($(this).val());

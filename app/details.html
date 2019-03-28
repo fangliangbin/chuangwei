@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>详情页</title>
     <link rel="stylesheet" href="css/common/restet.css">
     <link rel="stylesheet" href="css/common/iconfont.css">
     <link rel="stylesheet" href="css/common/common.css">
@@ -158,16 +158,11 @@
     <script src="js/details.js"></script>
     <script>
         $('#header').load('common.html #header ') ;
-        $('#search').load('./common.html #search ',function(){
+        $('#search').load('./common.html #search',function(){
+            $.getScript('js/cookie.js');
             $.getScript('js/jsonp.js');
-            $.getScript('js/search.js');
-            $.getScript('js/commontop.js')
+            $.getScript('js/search.js'); 
         });
-        $('.nav').load('common.html  .nav');
-        $('#footer').load('common.html #foot');
-    </script>
-    <script>
-         search.init();
     </script>
 </body>
 

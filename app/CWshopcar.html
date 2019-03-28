@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>购物车</title>
     <link rel="stylesheet" href="css/CWshopcar.css">
     <link rel="stylesheet" href="css/common/restet.css">
     <link rel="stylesheet" href="css/common/iconfont.css">
@@ -94,15 +94,20 @@
                 class="dialog-close">关闭</a></div>
     </div>
 
+<<<<<<< HEAD
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="js/shopRend.js"></script>
+=======
+    <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
+>>>>>>> 51d0e783438719a401ca0134f4be8d2cdaa4eb1a
     <script src="js/CWshopcar.js"></script>
     <script>
-         $('#header').load('./common.html #header ') ;
-         $('#search').load('./common.html #search ',function(){
-            $.getScript('js/jsonp.js') ;
-            $.getScript('js/search.js') ;
-        }) ;
+        $('#header').load('./common.html #header') ;
+        $('#search').load('./common.html #search',function(){
+            $.getScript('js/cookie.js');
+            $.getScript('js/jsonp.js');
+            $.getScript('js/search.js');
+        });
         $('.nav').load('./common.html  .nav') ;
         $('#footer').load('./common.html #foot');
     </script>
