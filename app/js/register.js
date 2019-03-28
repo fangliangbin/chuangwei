@@ -46,7 +46,7 @@ var register = (function(){
                     })
                     .then(data => {
                         alert(data.msg);
-                        $p.innerHTML = '手机号已存在';
+                        $p.innerHTML = '手机号已注册';
                         $p.className = 'bg-danger';
                         $('.verifyCodeBtn').attr('disabled','true');
                     })
