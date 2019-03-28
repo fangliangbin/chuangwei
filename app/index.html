@@ -33,6 +33,7 @@
     </div>
     <script src="https://cdn.staticfile.org/jquery/3.3.1/jquery.js"></script>
     <!-- 判断cookie中是否有user，有就渲染到页面 -->
+    
     <script>
             // 获取cookie
             var str = document.cookie;
@@ -90,16 +91,12 @@
             </div>
             <!-- 右边的购物车 -->
             <div class="search_right">
-                <p><i class="iconfont iconicon_gouwuche"></i>我的购物车</p>
-                <span>0</span>
-                <div class="shop-car-hover">
-                    <p>购物车列表<span class="iconfont iconcha"></span></p>
-                    <div class="shop-car-bottom">
-                        <span>共<p>0</p>件商品</span>
-                        <span>总计￥<p>0</p></span>
-                        <a href="CWshopcar.html">去购物车</a>
+                    <a href="CWshopcar.html"><p><i class="iconfont iconicon_gouwuche"></i>我的购物车</p></a>
+                    <div class="shop-car-hover clear_fix">
+                        <p>购物车列表<span class="iconfont iconcha"></span></p>
+                        <div class="showImgBox clear_fix"></div>
+                        <div class="shop-car-bottom"></div>
                     </div>
-                </div>
             </div>
             
         </div>
@@ -108,6 +105,7 @@
 <!-- 鼠标滚动轴，头部显示在页面上方 -->
 <script src="js/jsonp.js"></script>
 <script src="js/search.js"></script>
+<script src="js/common.js"></script>
 <script>
     //页面下拉搜索框置顶
     var $search = $('#search');            
