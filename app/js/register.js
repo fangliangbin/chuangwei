@@ -37,7 +37,22 @@ var register = (function(){
                     $p.innerHTML = '手机号正确';
                     $p.className = 'bg-success';
                     $('.verifyCodeBtn').removeAttr('disabled');
-
+                    var obj2 = {
+                        phone:$('#checkPhone').val()
+                    }
+                    sendAjax('http://localhost:7777/server/proving.php',{
+                        method:'POST',
+                        data:obj2
+                    })
+                    .then(data => {
+                        alert(data.msg);
+                        $p.innerHTML = '手机号已存在';
+                        $p.className = 'bg-danger';
+                        $('.verifyCodeBtn').attr('disabled','true');
+                    })
+                    .catch(data => {
+                        alert(data.msg);
+                    })
                 }else{
                     $p.innerHTML = '手机号有误';
                     $p.className = 'bg-danger';

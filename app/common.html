@@ -61,14 +61,14 @@
                 </div>
                 <!-- 右边的购物车 -->
                 <div class="search_right">
-                    <a href="#"><p><i class="iconfont iconicon_gouwuche"></i>我的购物车</p></a>
+                    <a href="CWshopcar.html"><p><i class="iconfont iconicon_gouwuche"></i>我的购物车</p></a>
                     <span>0</span>
                     <div class="shop-car-hover">
                         <p>购物车列表<span class="iconfont iconcha"></span></p>
                         <div class="shop-car-bottom">
                             <span>共<p>0</p>件商品</span>
                             <span>总计￥<p>0</p></span>
-                            <a href="#">去购物车</a>
+                            <a href="CWshopcar.html">去购物车</a>
                         </div>
                     </div>
                 </div>
@@ -91,15 +91,6 @@
                 $('#search').css({'position':'static'});
             }
         })
-        $('.search-btn').on('click',function(){
-        if($('.sou').val() == ''){
-            alert('搜索条件不为空');
-            $('.sou').select();
-            return false;
-        }
-        location.href = 'search.html'
-    })
-        search.init();
     </script>
         <!-- 轮播图上的导航条 -->
         <!-- 搜索栏 -->
@@ -227,7 +218,7 @@
                     </div>
                     <!--  商品分类后的导航 -->
                     <ul class="nav-ul">
-                        <li><a href="#">首页</a></li>
+                        <li><a href="index.html">首页</a></li>
                         <li><a href="#">电视</a></li>
                         <li><a href="#">洗衣机</a></li>
                         <li><a href="#">空调</a></li>
