@@ -13,7 +13,6 @@ var shopRend = (function(){
                 var self = $(this);
                 // 获取点击按钮的索引
                 var index = self.index('.dialog-sure');
-                console.log(index);
                 shopData.splice(index, 1);
                 // 删除对应dom, 重新渲染
                 _this.insertData(shopData);
@@ -32,7 +31,6 @@ var shopRend = (function(){
         insertData(data) {
             $box.html('');
             shopData = data;
-            console.log(data);
             data.forEach(x => {
                 var htmlTemplate = `
                 <ul class="order_lists data-id= '${x.id}'">

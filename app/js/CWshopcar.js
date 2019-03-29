@@ -5,7 +5,6 @@ $(function() {
 		$sonCheckBox = $('.son_check');
 	$allCheckbox.click(function() {
 		if ($(this).is(':checked')) {
-			console.log($(this)) ;
 			$(this).next('label').addClass('mark');
 		} else {
 			$(this).next('label').removeClass('mark')
@@ -83,7 +82,6 @@ $(function() {
 							num++;
 						}
 					});
-					console.log(num);
 					if (num == len) {
 						$(this).parents('.cartBox').find('.whole_check').prop("checked", true);
 						$(this).parents('.cartBox').find('.whole_check').next('label').addClass('mark');
@@ -154,7 +152,6 @@ $(function() {
 	var $order_content = '';
 	$('.delbtn').click(function() {
 		$('.my_model').css('display','block');
-		console.log(1);
 		$order_lists = $(this).parents('.order_lists');
 		$order_content = $order_lists.parents('.order_content');
 	});

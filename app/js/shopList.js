@@ -9,7 +9,6 @@ var shopCar = (function(){
             var _this = this;
             var url = window.location.href;
             url = url.split("?")[1].split("=")[1];
-            console.log(url)
             shop.forEach(x => {
                 for(var attr in x){
                    if(x.id == url){
@@ -21,12 +20,8 @@ var shopCar = (function(){
             $('.options').on('click','.left_btn',function(){
                 var self = $(this);
                 var index = self.index('.left_btn');
-                console.log(self)
-                console.log(index)
                 // 获取数量
                 var val = self.parent().prev('.list_con').find('.list_num').find('input').val() - 0;
-                console.log(val)
-                console.log(shopData)
                 shopData.count = val;
                 _this.setCarData(shopData);
             })
